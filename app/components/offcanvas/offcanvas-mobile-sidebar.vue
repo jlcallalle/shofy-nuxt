@@ -45,8 +45,8 @@
           </div>
         </div>
         <div class="offcanvas__btn">
-          <nuxt-link href="/contact" class="tp-btn-2 tp-btn-border-2"
-            >Contact Us</nuxt-link
+          <nuxt-link href="/contacto" class="tp-btn-2 tp-btn-border-2"
+            >Contacto</nuxt-link
           >
         </div>
       </div>

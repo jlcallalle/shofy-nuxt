@@ -47,7 +47,7 @@
                             <li><a href="#">Privacy Policy</a></li>
                             <li><a href="#">Terms & Conditions</a></li>
                             <li><a href="#">Latest News</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><nuxt-link href="/contacto">Contacto</nuxt-link></li>
                         </ul>
                       </div>
                   </div>

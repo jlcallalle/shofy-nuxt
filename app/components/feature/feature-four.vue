@@ -45,7 +45,7 @@
             </div>
             <div class="tp-feature-content-2">
               <h3 class="tp-feature-title-2">Support 24/7</h3>
-              <p>Contact us 24 hours a day</p>
+              <p>Contactanos las 24 horas del dia</p>
             </div>
           </div>
         </div>

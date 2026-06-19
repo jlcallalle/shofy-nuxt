@@ -5,10 +5,10 @@
           <div class="row">
             <div class="col-xxl-12">
                 <div class="breadcrumb__content p-relative z-index-1">
-                  <h3 class="breadcrumb__title">Keep In Touch with Us</h3>
+                  <h3 class="breadcrumb__title">Contacto</h3>
                   <div class="breadcrumb__list">
-                      <span><nuxt-link href="/">Home</nuxt-link></span>
-                      <span>Contact</span>
+                      <span><nuxt-link href="/">Inicio</nuxt-link></span>
+                      <span>Contacto</span>
                   </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@
           <div class="row">
               <div class="col-xl-9 col-lg-8">
                 <div class="tp-contact-wrapper">
-                    <h3 class="tp-contact-title">Sent A Message</h3>
+                    <h3 class="tp-contact-title">Enviar mensaje</h3>
 
                     <div class="tp-contact-form">
                       <!-- form start -->
@@ -43,7 +43,7 @@
                           </span>
                       </div>
                       <div class="tp-contact-info-content">
-                          <p data-info="mail"><a href="mailto:contact@shofy.com">contact@shofy.com</a></p>
+                          <p data-info="mail"><a href="mailto:contacto@boottrainingperu.com">contacto@boottrainingperu.com</a></p>
                           <p data-info="phone"><a href="tel:670-413-90-762">+670 413 90 762</a></p>
                       </div>
                     </div>
@@ -56,7 +56,7 @@
                       <div class="tp-contact-info-content">
                           <p>
                             <a href="https://www.google.com/maps/place/New+York,+NY,+USA/@40.6976637,-74.1197638,11z/data=!3m1!4b1!4m6!3m5!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728!16zL20vMDJfMjg2" target="_blank">
-                                84 sleepy hollow st. <br> jamaica, New York 1432
+                                Calle 27 s/n San Borja. <br> Lima, Perú
                             </a>
                           </p>
                       </div>
@@ -69,7 +69,7 @@
                       </div>
                       <div class="tp-contact-info-content">
                           <div class="tp-contact-social-wrapper mt-5">
-                            <h4 class="tp-contact-social-title">Find on social media</h4>
+                            <h4 class="tp-contact-social-title">Encuentranos en redes sociales</h4>
 
                             <div class="tp-contact-social-icon">
                                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>

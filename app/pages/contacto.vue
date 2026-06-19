@@ -1,9 +1,9 @@
 <template>
   <div>
-    <contact-area/>
+    <contacto-area/>
   </div>
 </template>
 
 <script setup lang="ts">
-useSeoMeta({ title: "Contact Page" });
+useSeoMeta({ title: "Contacto" });
 </script>

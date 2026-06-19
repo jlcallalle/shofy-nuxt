@@ -23,8 +23,8 @@
                 mauris sit amet tempor. Donec consectetur lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna.</p>
               <div class="tp-about-btn">
-                <nuxt-link href="/contact" class="tp-btn">
-                  Contact Us
+                <nuxt-link href="/contacto" class="tp-btn">
+                  Contacto
                   <svg-right-arrow/>
                 </nuxt-link>
               </div>

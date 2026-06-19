@@ -35,11 +35,11 @@
                     </form>
                   </div>
                   <div class="tp-header-action d-flex align-items-center ml-30">
-                    <div class="tp-header-action-item d-none d-lg-block">
+                    <!-- <div class="tp-header-action-item d-none d-lg-block">
                       <nuxt-link href="/compare" class="tp-header-action-btn">
                         <svg-compare />
                       </nuxt-link>
-                    </div>
+                    </div> -->
                     <div class="tp-header-action-item d-none d-lg-block">
                       <nuxt-link href="/wishlist" class="tp-header-action-btn">
                         <svg-wishlist />

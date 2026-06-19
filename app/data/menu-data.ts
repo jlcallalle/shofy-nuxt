@@ -159,8 +159,8 @@ export const menu_data:IMenuItem[] = [
   },
   {
     id:5,
-    link:'/contact',
-    title:'Contact',
+    link:'/contacto',
+    title:'Contacto',
   },
 ]
 
@@ -278,7 +278,7 @@ export const mobile_menu:IMobileType[] = [
   {
     id: 8,
     single_link: true,
-    title: 'Contact',
-    link: '/contact',
+    title: 'Contacto',
+    link: '/contacto',
   },
 ]
