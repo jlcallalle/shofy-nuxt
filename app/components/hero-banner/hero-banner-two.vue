@@ -83,19 +83,46 @@ const slider_data: ISliderData[] = [
     id: 1,
     subtitle: "New Arrivals 2023",
     title: "The Clothing Collection",
-    img: "/img/slider/2/slider-1.png",
+    img: "/img/slider/2/slider-1a.png",
   },
   {
     id: 2,
     subtitle: "Best Selling 2023",
     title: "The Summer Collection",
-    img: "/img/slider/2/slider-2.png",
+    img: "/img/slider/2/slider-2a.png",
   },
   {
     id: 3,
     subtitle: "Winter Has Arrived",
     title: "Amazing New designs",
-    img: "/img/slider/2/slider-3.png",
+    img: "/img/slider/2/slider-4.png",
+  },
+  {
+    id: 4,
+    subtitle: "Winter Has Arrived",
+    title: "Amazing New designs",
+    img: "/img/slider/2/slider-5.png",
   },
 ];
+
+/* const slider_data: ISliderData[] = [
+  {
+    id: 1,
+    subtitle: "New Arrivals 2023",
+    title: "The Clothing Collection",
+    img: "/img/slider/2/image-2.webp",
+  },
+  {
+    id: 2,
+    subtitle: "Best Selling 2023",
+    title: "The Summer Collection",
+    img: "/img/slider/2/image-1.webp",
+  },
+  {
+    id: 3,
+    subtitle: "Winter Has Arrived",
+    title: "Amazing New designs",
+    img: "/img/slider/2/image-3.webp",
+  },
+]; */
 </script>

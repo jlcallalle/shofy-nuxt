@@ -1,57 +1,49 @@
 <template>
   <div>
-    <nuxt-layout name="layout-one">
+    <nuxt-layout name="layout-two">
       <!-- hero banner start -->
-      <hero-banner-one />
+      <hero-banner-two />
       <!-- hero banner end -->
 
-      <!-- category start -->
-      <categories-electronic />
-      <!-- category end -->
+      <!-- category area start -->
+      <categories-fashion/>
+      <!-- category area end -->
+
+      <!-- popular product items start -->
+      <product-fashion-popular-items/>
+      <!-- popular product items end -->
+
+      <!-- all products start -->
+      <product-fashion-all-products/>
+      <!-- all products end -->
+
+      <!-- featured products start -->
+      <product-fashion-featured-items/>
+      <!-- featured products end -->
+
+      <!-- trending products start -->
+      <product-fashion-trending-products/>
+      <!-- trending products end -->
+
+      <!-- best-sell products start -->
+      <product-fashion-best-sell-items/>
+      <!-- best-sell products end -->
+
+      <!-- testimonial start -->
+      <testimonial-fashion/>
+      <!-- testimonial end -->
+
+      <!-- blog start -->
+      <blog-fashion-items/>
+      <!-- blog end -->
 
       <!-- feature area start -->
-      <feature-one />
+      <feature-two/>
       <!-- feature area end -->
 
-      <!-- product area start -->
-      <product-electronics-top-items />
-      <!-- product area end -->
-
-      <!-- banner area start -->
-      <banner-area />
-      <!-- banner area en -->
-
-      <!-- offer product start -->
-      <product-electronics-offer-items />
-      <!-- offer product end -->
-
-      <!-- product gadget area start -->
-      <product-electronics-gadget-items />
-      <!-- product gadget area end -->
-
-      <!-- product banner start -->
-      <banner-area-2 />
-      <!-- product banner end -->
-
-      <!-- product new arrivals area start -->
-      <product-electronics-new-arrivals />
-      <!-- product new arrivals area end -->
-
-      <!-- product sm items start -->
-      <product-electronics-sm-items />
-      <!-- product sm items end -->
-
-      <!-- blog item start -->
-      <blog-electronic/>
-      <!-- blog item end -->
-
       <!-- instagram area start -->
-      <instagram-area-1/>
+      <instagram-area-2/>
       <!-- instagram area end -->
-
-      <!-- subscribe area start -->
-      <subscribe-1/>
-      <!-- subscribe area end -->
     </nuxt-layout>
   </div>
 </template>
@@ -60,5 +52,5 @@
 definePageMeta({
   layout: false,
 });
-useSeoMeta({ title: "Shofy - Multipurpose eCommerce Vue Nuxt 3 Template" });
+useSeoMeta({ title: "Home two" });
 </script>
