@@ -39,17 +39,42 @@ export interface ShoeProduct {
   tags: string[];
 }
 
-const defaultSizes: ShoeSizeStock[] = [
-  { size: "38", stock: 4 },
-  { size: "39", stock: 4 },
-  { size: "40", stock: 4 },
-  { size: "41", stock: 4 },
-  { size: "42", stock: 4 },
-  { size: "43", stock: 4 },
+const allSizes: ShoeSizeStock[] = [
+  { size: "33", stock: 5 },
+  { size: "34", stock: 5 },
+  { size: "35", stock: 5 },
+  { size: "36", stock: 5 },
+  { size: "37", stock: 5 },
+  { size: "38", stock: 5 },
+  { size: "39", stock: 5 },
+  { size: "40", stock: 5 },
 ];
 
+const allColors: ShoeColor[] = [
+  { name: "Blanco", code: "#F7F4EF" },
+  { name: "Azul", code: "#1F5FAE" },
+  { name: "Rosa", code: "#F3A6B8" },
+  { name: "Negro", code: "#111827" },
+  { name: "Marron", code: "#8B5A2B" },
+  { name: "Chocolate", code: "#4E2A1E" },
+];
+
+/* const placeholder = (model: string, color: string, bg: string, fg = "111827") =>
+  `https://placehold.co/900x900/${bg}/${fg}.png?text=${model.replaceAll(" ", "+")}+${color}`; */
+
 const placeholder = (model: string, color: string, bg: string, fg = "111827") =>
-  `https://placehold.co/900x900/${bg}/${fg}.png?text=${model.replaceAll(" ", "+")}+${color}`;
+  `https://placehold.co/900x900/${bg}/${fg}.png?text=${model.replaceAll(" ", "+")}`;
+
+const placeholderImages = (model: string, colors: ShoeColor[]): ShoeImage[] =>
+  colors.map((color) => ({
+    color: color.name,
+    src: placeholder(
+      model,
+      color.name,
+      color.code.replace("#", ""),
+      color.name === "Blanco" || color.name === "Rosa" ? "111827" : "FFFFFF"
+    ),
+  }));
 
 export const shoes_data: ShoeProduct[] = [
   {
@@ -65,20 +90,11 @@ export const shoes_data: ShoeProduct[] = [
     discount: 0,
     quantity: 40,
     colors: [
-      { name: "Azul", code: "#1F5FAE" },
       { name: "Blanco", code: "#F7F4EF" },
+      { name: "Azul", code: "#1F5FAE" },
       { name: "Rosa", code: "#F3A6B8" },
     ],
-    sizes: [
-      { size: "33", stock: 5 },
-      { size: "34", stock: 5 },
-      { size: "35", stock: 5 },
-      { size: "36", stock: 5 },
-      { size: "37", stock: 5 },
-      { size: "38", stock: 5 },
-      { size: "39", stock: 5 },
-      { size: "40", stock: 5 },
-    ],
+    sizes: allSizes,
     images: [
       { color: "Blanco", src: "/img/producto/modelob/modelob_blanco.png" },
       { color: "Azul", src: "/img/producto/modelob/modelob_azul.png" },
@@ -98,20 +114,12 @@ export const shoes_data: ShoeProduct[] = [
     brand: "Boot Training",
     category: "Training",
     gender: "Unisex",
-    price: 340,
+    price: 300,
     discount: 0,
-    quantity: 24,
-    colors: [
-      { name: "Negro", code: "#111827" },
-      { name: "Rojo", code: "#B91C1C" },
-      { name: "Gris", code: "#9CA3AF" },
-    ],
-    sizes: defaultSizes,
-    images: [
-      { color: "Negro", src: placeholder("BOOT Z", "Negro", "111827", "FFFFFF") },
-      { color: "Rojo", src: placeholder("BOOT Z", "Rojo", "B91C1C", "FFFFFF") },
-      { color: "Gris", src: placeholder("BOOT Z", "Gris", "D1D5DB") },
-    ],
+    quantity: 40,
+    colors: allColors,
+    sizes: allSizes,
+    images: placeholderImages("BOOT Z", allColors),
     featured: true,
     description:
       "Modelo de entrenamiento con perfil firme, ideal para rutinas de fuerza, circuito y uso diario deportivo.",
@@ -126,20 +134,12 @@ export const shoes_data: ShoeProduct[] = [
     brand: "Boot Training",
     category: "Running",
     gender: "Unisex",
-    price: 300,
-    discount: 5,
-    quantity: 24,
-    colors: [
-      { name: "Blanco", code: "#F9FAFB" },
-      { name: "Verde", code: "#15803D" },
-      { name: "Negro", code: "#111827" },
-    ],
-    sizes: defaultSizes,
-    images: [
-      { color: "Blanco", src: placeholder("TENNIS", "Blanco", "F9FAFB") },
-      { color: "Verde", src: placeholder("TENNIS", "Verde", "15803D", "FFFFFF") },
-      { color: "Negro", src: placeholder("TENNIS", "Negro", "111827", "FFFFFF") },
-    ],
+    price: 250,
+    discount: 0,
+    quantity: 40,
+    colors: allColors,
+    sizes: allSizes,
+    images: placeholderImages("TENNIS", allColors),
     featured: true,
     description:
       "Zapatilla ligera para trote, caminata activa y sesiones de cardio con comodidad durante todo el dia.",
@@ -154,20 +154,12 @@ export const shoes_data: ShoeProduct[] = [
     brand: "Boot Training",
     category: "Casual",
     gender: "Unisex",
-    price: 330,
+    price: 300,
     discount: 0,
-    quantity: 24,
-    colors: [
-      { name: "Negro", code: "#111827" },
-      { name: "Blanco", code: "#F9FAFB" },
-      { name: "Morado", code: "#6D28D9" },
-    ],
-    sizes: defaultSizes,
-    images: [
-      { color: "Negro", src: placeholder("SKULL", "Negro", "111827", "FFFFFF") },
-      { color: "Blanco", src: placeholder("SKULL", "Blanco", "F9FAFB") },
-      { color: "Morado", src: placeholder("SKULL", "Morado", "6D28D9", "FFFFFF") },
-    ],
+    quantity: 40,
+    colors: allColors,
+    sizes: allSizes,
+    images: placeholderImages("SKULL", allColors),
     featured: false,
     description:
       "Modelo urbano con caracter deportivo, pensado para combinar estilo casual con comodidad de entrenamiento.",
@@ -182,20 +174,12 @@ export const shoes_data: ShoeProduct[] = [
     brand: "Boot Training",
     category: "Training",
     gender: "Hombre",
-    price: 360,
-    discount: 10,
-    quantity: 24,
-    colors: [
-      { name: "Grafito", code: "#374151" },
-      { name: "Naranja", code: "#F97316" },
-      { name: "Negro", code: "#111827" },
-    ],
-    sizes: defaultSizes,
-    images: [
-      { color: "Grafito", src: placeholder("IRON", "Grafito", "374151", "FFFFFF") },
-      { color: "Naranja", src: placeholder("IRON", "Naranja", "F97316") },
-      { color: "Negro", src: placeholder("IRON", "Negro", "111827", "FFFFFF") },
-    ],
+    price: 300,
+    discount: 0,
+    quantity: 40,
+    colors: allColors,
+    sizes: allSizes,
+    images: placeholderImages("IRON", allColors),
     featured: true,
     description:
       "Zapatilla robusta para entrenamiento de fuerza, estabilidad y soporte en movimientos explosivos.",
@@ -210,20 +194,20 @@ export const shoes_data: ShoeProduct[] = [
     brand: "Boot Training",
     category: "Casual",
     gender: "Mujer",
-    price: 315,
+    price: 300,
     discount: 0,
-    quantity: 24,
+    quantity: 40,
     colors: [
       { name: "Rosa", code: "#F3A6B8" },
-      { name: "Blanco", code: "#F9FAFB" },
-      { name: "Dorado", code: "#D4AF37" },
+      { name: "Marron", code: "#8B5A2B" },
+      { name: "Chocolate", code: "#4E2A1E" },
     ],
-    sizes: defaultSizes,
-    images: [
-      { color: "Rosa", src: placeholder("DIVAS", "Rosa", "F3A6B8") },
-      { color: "Blanco", src: placeholder("DIVAS", "Blanco", "F9FAFB") },
-      { color: "Dorado", src: placeholder("DIVAS", "Dorado", "D4AF37") },
-    ],
+    sizes: allSizes,
+    images: placeholderImages("DIVAS", [
+      { name: "Rosa", code: "#F3A6B8" },
+      { name: "Marron", code: "#8B5A2B" },
+      { name: "Chocolate", code: "#4E2A1E" },
+    ]),
     featured: false,
     description:
       "Zapatilla casual deportiva con look moderno, creada para acompanarte del entrenamiento al dia a dia.",
