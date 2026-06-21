@@ -35,7 +35,7 @@
                 <span>{{item.subtitle}}</span>
                 <h3 class="tp-slider-title-2">{{item.title}}</h3>
                 <div class="tp-slider-btn-2">
-                  <nuxt-link href="/shop" class="tp-btn tp-btn-border">Shop Collection</nuxt-link>
+                  <nuxt-link href="/productos" class="tp-btn tp-btn-border">Shop Collection</nuxt-link>
                 </div>
               </div>
             </div>

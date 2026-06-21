@@ -9,7 +9,7 @@
             </div>
             <div class="tp-featured-content-3">
               <h3 class="tp-featured-title-3">
-                <nuxt-link href="/shop">
+                <nuxt-link href="/productos">
                   <span v-html="item.title"></span>
                 </nuxt-link>
               </h3>

@@ -10,7 +10,7 @@
         </div>
         <div class="col-lg-6 col-md-4">
           <div class="tp-product-more-3 text-md-end mb-65">
-            <nuxt-link href="/shop" class="tp-btn">
+            <nuxt-link href="/productos" class="tp-btn">
               Shop All Products
               <svg-sm-arrow />
             </nuxt-link>

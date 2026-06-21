@@ -8,7 +8,7 @@
               Shop by Category
               <svg-section-line-2 />
             </span>
-            <h3 class="tp-section-title-2">This Week's Featured</h3>
+            <h3 class="tp-section-title-2">Destacado de esta semana</h3>
           </div>
         </div>
       </div>

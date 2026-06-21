@@ -8,10 +8,10 @@
             <div class="tp-banner-content">
               <span>Sale 20% off all store</span>
               <h3 class="tp-banner-title">
-                <nuxt-link href="/shop">Smartphone <br> BLU G91 Pro 2022</nuxt-link>
+                <nuxt-link href="/productos">Smartphone <br> BLU G91 Pro 2022</nuxt-link>
               </h3>
               <div class="tp-banner-btn">
-                <nuxt-link href="/shop" class="tp-link-btn">Shop Now
+                <nuxt-link href="/productos" class="tp-link-btn">Shop Now
                   <SvgRightArrow2/>
                 </nuxt-link>
               </div>
@@ -23,11 +23,11 @@
             <div class="tp-banner-thumb include-bg transition-3" style="background-image: url(/img/product/banner/product-banner-2.jpg);"></div>
             <div class="tp-banner-content">
               <h3 class="tp-banner-title">
-                <nuxt-link href="/shop">HyperX Cloud II <br> Wireless</nuxt-link>
+                <nuxt-link href="/productos">HyperX Cloud II <br> Wireless</nuxt-link>
               </h3>
               <p>Sale 35% off</p>
               <div class="tp-banner-btn">
-                <nuxt-link href="/shop" class="tp-link-btn">Shop Now
+                <nuxt-link href="/productos" class="tp-link-btn">Shop Now
                   <SvgRightArrow2/>
                 </nuxt-link>
               </div>

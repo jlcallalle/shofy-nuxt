@@ -3,7 +3,7 @@
     <div class="container">
       <div v-if="cartStore.cart_products.length === 0" className='text-center pt-50'>
         <h3>No Cart Items Found</h3>
-        <nuxt-link href="/shop" className="tp-cart-checkout-btn mt-20">Continue Shipping</nuxt-link>
+        <nuxt-link href="/productos" className="tp-cart-checkout-btn mt-20">Continue Shipping</nuxt-link>
       </div>
       <div v-else class="row">
         <div class="col-xl-9 col-lg-8">

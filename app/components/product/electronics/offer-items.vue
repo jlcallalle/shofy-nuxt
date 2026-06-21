@@ -15,7 +15,7 @@
             class="tp-product-offer-more-wrapper d-flex justify-content-sm-end p-relative z-index-1"
           >
             <div class="tp-product-offer-more mb-40 text-sm-end grey-bg-2">
-              <nuxt-link href="/shop" class="tp-btn tp-btn-2 tp-btn-blue">
+              <nuxt-link href="/productos" class="tp-btn tp-btn-2 tp-btn-blue">
                 View All Deals
                 <SvgRightArrow />
               </nuxt-link>

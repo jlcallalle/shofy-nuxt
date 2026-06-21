@@ -28,7 +28,7 @@ const router = useRouter();
 
 const handleCategory = (parent:string) => {
   router.push(
-    `/shop?category=${parent.toLowerCase().replace("&", "").split(" ").join("-")}`
+    `/productos?category=${parent.toLowerCase().replace("&", "").split(" ").join("-")}`
   );
 };
 </script>

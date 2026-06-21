@@ -58,12 +58,12 @@
             ></div>
             <div class="tp-trending-banner-content">
               <h3 class="tp-trending-banner-title">
-                <nuxt-link href="/shop">
+                <nuxt-link href="/productos">
                   Short Sleeve Tunic <br />Tops Casual Swing
                 </nuxt-link>
               </h3>
               <div class="tp-trending-banner-btn">
-                <nuxt-link href="/shop"
+                <nuxt-link href="/productos"
                   class="tp-btn tp-btn-border tp-btn-border-white tp-btn-border-white-sm"
                 >
                   Explore More

@@ -70,7 +70,7 @@
             alt="empty-cart-img"
           />
           <p>Your Cart is empty</p>
-          <nuxt-link href="/shop" class="tp-btn">Go to Shop</nuxt-link>
+          <nuxt-link href="/productos" class="tp-btn">Ir a productos</nuxt-link>
         </div>
       </div>
       <div v-if="cartStore.cart_products.length > 0" class="cartmini__checkout">

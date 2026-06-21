@@ -35,64 +35,64 @@ export const menu_data:IMenuItem[] = [
   },
   {
     id:2,
-    link:'/shop',
-    title:'Shop',
+    link:'/productos',
+    title:'Productos',
     mega_menu:true,
     shop_mega_menus:[
       {
-        link:'/shop',
-        title:'Shop Pages',
+        link:'/productos',
+        title:'Paginas de productos',
         list_menus:[
-          {title:'Grid Layout',link:'/shop'},
+          {title:'Productos',link:'/productos'},
           {title:'Shop Categories',link:'/shop-categories'},
           {title:'List Layout',link:'/shop-list'},
           {title:'Full width Layout',link:'/shop-full-width'},
           {title:'1600px Layout',link:'/shop-1600'},
-          {title:'Left Sidebar',link:'/shop'},
+          {title:'Left Sidebar',link:'/productos'},
           {title:'Right Sidebar',link:'/shop-right-sidebar'},
           {title:'Hidden Sidebar',link:'/shop-no-sidebar'},
         ]
       },
       {
-        link:'/shop',
+        link:'/productos',
         title:'Features',
         list_menus:[
           {title:'Filter Dropdown',link:'/shop-filter-dropdown'},
           {title:'Filters Offcanvas',link:'/shop-filter-offcanvas'},
-          {title:'Filters Sidebar',link:'/shop'},
+          {title:'Filters Sidebar',link:'/productos'},
           {title:'Load More button',link:'/shop-load-more'},
           {title:'1600px Layout',link:'/shop-1600'},
           {title:'Collections list',link:'/shop-list'},
-          {title:'Hidden search',link:'/shop'},
-          {title:'Search Full screen',link:'/shop'},
+          {title:'Hidden search',link:'/productos'},
+          {title:'Search Full screen',link:'/productos'},
         ]
       },
       {
-        link:'/shop',
+        link:'/productos',
         title:'Hover Style',
         list_menus:[
-          {title:'Hover Style 1',link:'/shop'},
-          {title:'Hover Style 2',link:'/shop'},
-          {title:'Hover Style 3',link:'/shop'},
-          {title:'Hover Style 4',link:'/shop'}
+          {title:'Hover Style 1',link:'/productos'},
+          {title:'Hover Style 2',link:'/productos'},
+          {title:'Hover Style 3',link:'/productos'},
+          {title:'Hover Style 4',link:'/productos'}
         ]
       },
     ]
   },
   {
     id:3,
-    link:'/shop',
-    title:'Products',
+    link:'/productos',
+    title:'Productos',
     mega_menu:true,
     product_menus:[
       {
         id:1,
-        title:'Shop Page',
-        link:'/shop',
+        title:'Pagina de productos',
+        link:'/productos',
         dropdown_menus:[
           {title:'Only Categories',link:'/shop-categories'},
           {title:'Shop Grid with Sidebar',link:'/shop-filter-offcanvas'},
-          {title:'Shop Grid',link:'/shop'},
+          {title:'Productos',link:'/productos'},
           {title:'Categories',link:'/shop-categories'},
           {title:'Shop List',link:'/shop-list'},
           {title:'Product Details',link:'/product-details'},
@@ -100,8 +100,8 @@ export const menu_data:IMenuItem[] = [
       },
       {
         id:2,
-        title:'Products',
-        link:'/shop',
+        title:'Productos',
+        link:'/productos',
         dropdown_menus:[
           {title:'Product Simple',link:'/product-details'},
           {title:'With Video',link:'/product-details-video'},
@@ -115,7 +115,7 @@ export const menu_data:IMenuItem[] = [
       {
         id:3,
         title:'eCommerce',
-        link:'/shop',
+        link:'/productos',
         dropdown_menus:[
           {title:'Shopping Cart',link:'/cart'},
           {title:'Track Your Order',link:'/order'},
@@ -128,7 +128,7 @@ export const menu_data:IMenuItem[] = [
       {
         id:4,
         title:'More Pages',
-        link:'/shop',
+        link:'/productos',
         dropdown_menus:[
           {title:'About',link:'/about'},
           {title:'Login',link:'/login'},
@@ -201,10 +201,10 @@ export const mobile_menu:IMobileType[] = [
   {
     id: 2,
     sub_menu: true,
-    title: 'Products',
-    link: '/shop',
+    title: 'Productos',
+    link: '/productos',
     sub_menus: [
-      { title: 'Shop', link: '/shop' },
+      { title: 'Productos', link: '/productos' },
       { title: 'Shop Full Width', link: '/shop-full-width' },
       { title: 'shop-1600', link: '/shop-1600' },
       { title: 'Shop Right Sidebar', link: '/shop-right-sidebar' },

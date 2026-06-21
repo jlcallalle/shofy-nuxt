@@ -72,7 +72,7 @@
                   </div>
                 </div>
                 <div class="tp-slider-btn-3">
-                  <nuxt-link href="/shop"
+                  <nuxt-link href="/productos"
                     class="tp-btn tp-btn-border tp-btn-border-white"
                     >
                     Discover Now

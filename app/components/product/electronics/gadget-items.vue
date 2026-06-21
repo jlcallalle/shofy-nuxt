@@ -15,17 +15,17 @@
 
               <div class="tp-product-gadget-categories-list">
                 <ul>
-                  <li><nuxt-link href="/shop">Micrscope</nuxt-link></li>
-                  <li><nuxt-link href="/shop">Remote Control</nuxt-link></li>
-                  <li><nuxt-link href="/shop">Monitor</nuxt-link></li>
-                  <li><nuxt-link href="/shop">Thermometer</nuxt-link></li>
-                  <li><nuxt-link href="/shop">Backpack</nuxt-link></li>
-                  <li><nuxt-link href="/shop">Headphones</nuxt-link></li>
+                  <li><nuxt-link href="/productos">Micrscope</nuxt-link></li>
+                  <li><nuxt-link href="/productos">Remote Control</nuxt-link></li>
+                  <li><nuxt-link href="/productos">Monitor</nuxt-link></li>
+                  <li><nuxt-link href="/productos">Thermometer</nuxt-link></li>
+                  <li><nuxt-link href="/productos">Backpack</nuxt-link></li>
+                  <li><nuxt-link href="/productos">Headphones</nuxt-link></li>
                 </ul>
               </div>
 
               <div class="tp-product-gadget-btn">
-                <nuxt-link href="/shop" class="tp-link-btn">
+                <nuxt-link href="/productos" class="tp-link-btn">
                   More Products
                   <SvgRightArrow2 />
                 </nuxt-link>
@@ -56,7 +56,7 @@
                       Only {{ formatPrice(item.price) }}
                     </span>
                     <h3 class="tp-product-gadget-banner-title">
-                      <nuxt-link href="/shop">
+                      <nuxt-link href="/productos">
                         <span v-html="item.title"></span>
                       </nuxt-link>
                     </h3>

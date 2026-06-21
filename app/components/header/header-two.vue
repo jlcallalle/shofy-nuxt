@@ -28,7 +28,7 @@
                 <div class="tp-header-bottom-right d-flex align-items-center justify-content-end pl-30">
                   <div class="tp-header-search-2 d-none d-sm-block">
                     <form @submit.prevent="handleSubmit">
-                      <input type="text" placeholder="Search for Products..." v-model="searchText">
+                      <input type="text" placeholder="Buscar Productos" v-model="searchText">
                       <button type="submit">
                         <svg-search />
                       </button>

@@ -33,7 +33,7 @@
                     <p class="new-price">{{formatPrice(item.newPrice,false)}}</p>
                   </div>
                   <div class="tp-product-banner-btn">
-                    <nuxt-link href="/shop" class="tp-btn tp-btn-2">Shop now</nuxt-link>
+                    <nuxt-link href="/productos" class="tp-btn tp-btn-2">Shop now</nuxt-link>
                   </div>
                 </div>
               </div>

@@ -10,7 +10,7 @@
         </div>
         <div class="col-lg-6 col-md-4">
           <div class="tp-category-more-3 text-md-end mb-55">
-            <nuxt-link href="/shop" class="tp-btn">
+            <nuxt-link href="/productos" class="tp-btn">
               Shop All Products
               <svg-sm-arrow />
             </nuxt-link>
@@ -66,6 +66,6 @@ const router = useRouter();
 // handle parent
 const handleParentCategory = (value: string) => {
   const newCategory = value.toLowerCase().replace("&", "").split(" ").join("-");
-  router.push(`/shop?category=${newCategory}`);
+  router.push(`/productos?category=${newCategory}`);
 };
 </script>

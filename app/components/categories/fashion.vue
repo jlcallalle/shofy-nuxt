@@ -43,6 +43,6 @@ const router = useRouter();
 // handle parent
 const handleParentCategory = (value: string) => {
   const newCategory = value.toLowerCase().replace("&", "").split(" ").join("-");
-  router.push(`/shop?category=${newCategory}`);
+  router.push(`/productos?category=${newCategory}`);
 };
 </script>

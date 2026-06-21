@@ -40,16 +40,16 @@
                   <div class="tp-collection-item-4 text-center">
                     <span class="tp-collection-subtitle-4">BUILD YOUR OWN SETS</span>
                     <div class="tp-collection-thumb-banner-4 m-img">
-                      <nuxt-link href="/shop">
+                      <nuxt-link href="/productos">
                         <img src="/img/product/collection/4/collection-sm-1.jpg" alt="">
                       </nuxt-link>
                     </div>
                     <div class="tp-collection-content-4">
                       <h3 class="tp-collection-title-4">
-                        <nuxt-link href="/shop">Our finest jewelry</nuxt-link>
+                        <nuxt-link href="/productos">Our finest jewelry</nuxt-link>
                       </h3>
                       <div class="tp-collection-btn-4">
-                        <nuxt-link href="/shop" class="tp-link-btn-line-2">
+                        <nuxt-link href="/productos" class="tp-link-btn-line-2">
                           Shop this collection
                           <svg-sm-arrow-2/>
                         </nuxt-link>

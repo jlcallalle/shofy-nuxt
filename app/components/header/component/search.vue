@@ -3,7 +3,7 @@
     <form @submit.prevent="handleSubmit">
       <div class="tp-header-search-wrapper d-flex align-items-center">
         <div class="tp-header-search-box">
-          <input type="text" placeholder="Search for Products..." v-model="searchText" />
+          <input type="text" placeholder="Buscar Productos" v-model="searchText" />
         </div>
         <div class="tp-header-search-category">
           <ui-nice-select

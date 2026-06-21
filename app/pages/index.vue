@@ -6,11 +6,11 @@
       <!-- hero banner end -->
 
       <!-- category area start -->
-      <categories-fashion/>
+      <!-- <categories-fashion/> -->
       <!-- category area end -->
 
       <!-- popular product items start -->
-      <product-fashion-popular-items/>
+      <!-- <product-fashion-popular-items/> -->
       <!-- popular product items end -->
 
       <!-- all products start -->

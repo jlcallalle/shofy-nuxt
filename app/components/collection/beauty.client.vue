@@ -15,12 +15,12 @@
             <div class="tp-collection-content">
               <span>Cosmetics Collection</span>
               <h3 class="tp-collection-title">
-                <nuxt-link href="/shop">Foundation and <br />
+                <nuxt-link href="/productos">Foundation and <br />
                   powder brush
                 </nuxt-link>
               </h3>
               <div class="tp-collection-btn">
-                <nuxt-link href="/shop" class="tp-btn">
+                <nuxt-link href="/productos" class="tp-btn">
                   Discover Now
                   <svg-sm-arrow />
                 </nuxt-link>
@@ -40,13 +40,13 @@
             ></div>
             <div class="tp-collection-content-1">
               <h3 class="tp-collection-title-1">
-                <nuxt-link href="/shop">
+                <nuxt-link href="/productos">
                   Tops <br />
                   Blouse Shirts
                 </nuxt-link>
               </h3>
               <div class="tp-collection-btn-1">
-                <nuxt-link href="/shop" class="tp-link-btn-line">Shop Collection</nuxt-link>
+                <nuxt-link href="/productos" class="tp-link-btn-line">Shop Collection</nuxt-link>
               </div>
             </div>
           </div>

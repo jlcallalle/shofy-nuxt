@@ -64,7 +64,7 @@
                 </p>
 
                 <div class="tp-slider-btn">
-                  <nuxt-link href="/shop" class="tp-btn tp-btn-2 tp-btn-white">
+                  <nuxt-link href="/productos" class="tp-btn tp-btn-2 tp-btn-white">
                     Shop Now
                     <SvgRightArrow />
                   </nuxt-link>

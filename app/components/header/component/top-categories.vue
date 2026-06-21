@@ -46,13 +46,13 @@ const handleActive = () => isActive.value = !isActive.value;
 // handle parent
 const handleParentCategory = (value:string) => {
   const newCategory = value.toLowerCase().replace("&", "").split(" ").join("-");
-  router.push(`/shop?category=${newCategory}`);
+  router.push(`/productos?category=${newCategory}`);
 }
 
 // handle parent
 const handleSubCategory = (value:string) => {
   const newCategory = value.toLowerCase().replace("&", "").split(" ").join("-");
-  router.push(`/shop?subCategory=${newCategory}`);
+  router.push(`/productos?subCategory=${newCategory}`);
 }
 
 const closeAction = () => {

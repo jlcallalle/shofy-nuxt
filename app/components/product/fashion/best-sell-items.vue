@@ -24,7 +24,7 @@
       <div class="row">
         <div class="col-xl-12">
           <div class="tp-seller-more text-center mt-10">
-            <nuxt-link href="/shop" class="tp-btn tp-btn-border tp-btn-border-sm">
+            <nuxt-link href="/productos" class="tp-btn tp-btn-border tp-btn-border-sm">
               Shop All Product
             </nuxt-link>
           </div>

@@ -3,7 +3,7 @@
     <div class="container">
       <div v-if="cartStore.cart_products.length === 0" class="text-center pt-50">
         <h3 class="py-2">No items found in cart to checkout</h3>
-        <nuxt-link href="/shop" class="tp-checkout-btn">
+        <nuxt-link href="/productos" class="tp-checkout-btn">
           Return to shop
         </nuxt-link>
       </div>

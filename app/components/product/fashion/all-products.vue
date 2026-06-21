@@ -1,14 +1,14 @@
 <template>
-  <section class="tp-product-area pb-90">
+  <section class="tp-product-area pb-90 pt-90">
     <div class="container">
       <div class="row">
         <div class="col-xl-12">
           <div class="tp-section-title-wrapper-2 text-center mb-35">
-            <span class="tp-section-title-pre-2">
+            <!-- <span class="tp-section-title-pre-2">
               All Product Shop
               <svg-section-line-2 />
-            </span>
-            <h3 class="tp-section-title-2">Customer Favorite Style Product</h3>
+            </span> -->
+            <h3 class="tp-section-title-2">Nuestros Productos</h3>
           </div>
         </div>
       </div>

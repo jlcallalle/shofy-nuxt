@@ -10,10 +10,10 @@
                 <div class="tp-banner-content-4">
                   <span>Collection</span>
                   <h3 class="tp-banner-title-4">
-                    <nuxt-link href="/shop">Ardeco pearl <br> Rings style 2023</nuxt-link>
+                    <nuxt-link href="/productos">Ardeco pearl <br> Rings style 2023</nuxt-link>
                   </h3>
                   <div class="tp-banner-btn-4">
-                    <nuxt-link href="/shop" class="tp-btn tp-btn-border">
+                    <nuxt-link href="/productos" class="tp-btn tp-btn-border">
                       Shop Now
                       <svg-right-arrow/>
                     </nuxt-link>
@@ -28,7 +28,7 @@
                 <div class="tp-banner-content-4">
                   <span>Trending</span>
                   <h3 class="tp-banner-title-4">
-                    <nuxt-link href="/shop">Tropical Set</nuxt-link>
+                    <nuxt-link href="/productos">Tropical Set</nuxt-link>
                   </h3>
                 </div>
               </div>
@@ -40,7 +40,7 @@
                 <div class="tp-banner-content-4">
                   <span>New Arrival</span>
                   <h3 class="tp-banner-title-4">
-                    <nuxt-link href="/shop">Gold Jewelry</nuxt-link>
+                    <nuxt-link href="/productos">Gold Jewelry</nuxt-link>
                   </h3>
                 </div>
               </div>
@@ -53,10 +53,10 @@
             <div class="tp-banner-full-content">
               <span>Collection</span>
               <h3 class="tp-banner-full-title">
-                <nuxt-link href="/shop">Ring gold with <br> diamonds</nuxt-link>
+                <nuxt-link href="/productos">Ring gold with <br> diamonds</nuxt-link>
               </h3>
               <div class="tp-banner-full-btn">
-                <nuxt-link href="/shop" class="tp-btn tp-btn-border">
+                <nuxt-link href="/productos" class="tp-btn tp-btn-border">
                   Shop Now
                   <svg-right-arrow/>
                 </nuxt-link>

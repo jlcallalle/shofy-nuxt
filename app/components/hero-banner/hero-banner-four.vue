@@ -61,7 +61,7 @@
 
                 <div class="tp-slider-btn-4">
                   <nuxt-link
-                    href="/shop"
+                    href="/productos"
                     class="tp-btn tp-btn-border tp-btn-border-white"
                   >
                     Discover Now
