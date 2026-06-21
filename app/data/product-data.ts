@@ -3132,6 +3132,71 @@ const product_data: IProduct[] = [
     featured: true,
     sellCount: 2,
   },
+  {
+    id: "boot-b-modelob",
+    sku: "BOOT-B-320",
+    img: "/img/producto/modelob/modelob_blanco.png",
+    title: "BOOT B",
+    slug: "boot-b",
+    unit: "1 par",
+    imageURLs: [
+      {
+        color: {
+          name: "Blanco",
+          clrCode: "#F7F4EF",
+        },
+        img: "/img/producto/modelob/modelob_blanco.png",
+      },
+      {
+        color: {
+          name: "Azul",
+          clrCode: "#1F5FAE",
+        },
+        img: "/img/producto/modelob/modelob_azul.png",
+      },
+      {
+        color: {
+          name: "Rosa",
+          clrCode: "#F3A6B8",
+        },
+        img: "/img/producto/modelob/modelob_rosado.png",
+      },
+    ],
+    parent: "Shoes",
+    children: "Zapatillas",
+    price: 320,
+    discount: 0,
+    quantity: 24,
+    brand: {
+      name: "BOOT",
+    },
+    category: {
+      name: "Shoes",
+    },
+    status: "in-stock",
+    reviews: [],
+    productType: "fashion",
+    description:
+      "Zapatilla BOOT B disponible en colores azul, blanco y rosa. Modelo comodo para uso diario, con tallas disponibles desde 33 hasta 40.",
+    additionalInformation: [
+      {
+        key: "Colores",
+        value: "Azul, Blanco y Rosa",
+      },
+      {
+        key: "Tamanos",
+        value: "33, 34, 35, 36, 37, 38, 39, 40",
+      },
+      {
+        key: "Categoria",
+        value: "Zapatillas",
+      },
+    ],
+    tags: ["zapatilla", "boot", "shoes", "fashion"],
+    featured: true,
+    sellCount: 0,
+    sizes: ["33", "34", "35", "36", "37", "38", "39", "40"],
+  },
 ];
 
 export default product_data;
