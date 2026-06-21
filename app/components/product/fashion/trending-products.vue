@@ -9,7 +9,7 @@
                 More to Discover
                 <svg-section-line-2 />
               </span>
-              <h3 class="tp-section-title-2">Trending Arrivals</h3>
+              <h3 class="tp-section-title-2">Novedades</h3>
             </div>
             <div class="tp-trending-slider">
               <Swiper

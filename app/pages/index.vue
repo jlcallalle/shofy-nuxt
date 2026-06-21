@@ -26,7 +26,7 @@
       <!-- trending products end -->
 
       <!-- best-sell products start -->
-      <product-fashion-best-sell-items/>
+      <!-- <product-fashion-best-sell-items/> -->
       <!-- best-sell products end -->
 
       <!-- testimonial start -->
