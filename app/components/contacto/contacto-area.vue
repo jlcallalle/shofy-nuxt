@@ -1,4 +1,4 @@
-<template>
+﻿<template>
     <!-- breadcrumb area start -->
     <section class="breadcrumb__area include-bg text-center pt-95 pb-50">
       <div class="container">
@@ -55,7 +55,7 @@
                       </div>
                       <div class="tp-contact-info-content">
                           <p>
-                            <a href="https://www.google.com/maps/place/New+York,+NY,+USA/@40.6976637,-74.1197638,11z/data=!3m1!4b1!4m6!3m5!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728!16zL20vMDJfMjg2" target="_blank">
+                            <a href="https://www.google.com/maps/search/?api=1&query=San+Borja,+Lima,+Peru" target="_blank">
                                 Calle 27 s/n San Borja. <br> Lima, Perú
                             </a>
                           </p>
@@ -101,7 +101,7 @@
                     </span>
                 </div>
                 <div class="tp-map-iframe">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830894612!2d-74.11976383964465!3d40.69766374865766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1678114595329!5m2!1sen!2sbd"></iframe>
+                    <iframe src="https://www.google.com/maps?q=-12.0976,-77.0063&z=16&output=embed"></iframe>
                 </div>
               </div>
           </div>

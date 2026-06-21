@@ -125,10 +125,9 @@
     </div>
     <div class="tp-product-details-social">
       <span>Compartir: </span>
+      <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
       <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
       <a href="#"><i class="fa-brands fa-twitter"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="#"><i class="fa-brands fa-vimeo-v"></i></a>
     </div>
     <div class="tp-product-details-msg mb-15">
       <ul>
@@ -185,7 +184,7 @@ const whatsappUrl = computed(() => {
   justify-content: center;
   gap: 8px;
   min-height: 38px;
-  padding: 10px 16px;
+  padding: 11px 16px;
   border-radius: 5px;
   background-color: #118c4f;
   color: #ffffff;
