@@ -80,12 +80,20 @@
             </div>
           </div>
           <div class="tp-product-details-add-to-cart mb-15 w-100">
-            <button @click="cartStore.addCartProduct(product)" class="tp-product-details-add-to-cart-btn w-100">Agregar al carrito</button>
+            <a
+              :href="whatsappUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="tp-product-details-whatsapp-btn w-100 text-center"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+              Comprar por WhatsApp
+            </a>
           </div>
       </div>
-      <nuxt-link :href="`/producto/${product.slug || product.id}`" class="tp-product-details-buy-now-btn w-100 text-center">Comprar ahora</nuxt-link>
+      <!-- <nuxt-link :href="`/producto/${product.slug || product.id}`" class="tp-product-details-buy-now-btn w-100 text-center">Comprar ahora</nuxt-link> -->
     </div>
-    <div class="tp-product-details-action-sm">
+    <!-- <div class="tp-product-details-action-sm">
       <button @click="compareStore.add_compare_product(product)" type="button" class="tp-product-details-action-sm-btn">
           <svg-compare-3/>
           Comparar
@@ -98,7 +106,7 @@
           <svg-ask-question/>
           Hacer una pregunta
       </button>
-    </div>
+    </div> -->
 
     <div v-if="isShowBottom">
       <div class="tp-product-details-query">
@@ -159,4 +167,42 @@ const hasColorData = computed(() =>
   props.product.imageURLs.some(item => item?.color && item?.color?.name)
 );
 
+const whatsappUrl = computed(() => {
+  const finalPrice = props.product.discount > 0
+    ? Number(props.product.price) - (Number(props.product.price) * Number(props.product.discount)) / 100
+    : Number(props.product.price);
+  const message = `Hola, deseo comprar ${props.product.title}. Cantidad: ${cartStore.orderQuantity}. Precio: S/ ${finalPrice.toFixed(2)}.`;
+
+  return `https://api.whatsapp.com/send?phone=51947724459&text=${encodeURIComponent(message)}`;
+});
+
 </script>
+
+<style scoped>
+.tp-product-details-whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 38px;
+  padding: 10px 16px;
+  border-radius: 5px;
+  background-color: #118c4f;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2;
+  border: 1px solid #118c4f;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.tp-product-details-whatsapp-btn:hover {
+  background-color: #0d7a44;
+  border-color: #0d7a44;
+  color: #ffffff;
+}
+
+.tp-product-details-whatsapp-btn i {
+  font-size: 16px;
+}
+</style>

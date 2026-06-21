@@ -8,7 +8,7 @@
               <span class="tp-testimonial-shape-gradient"></span>
             </div>
             <h3 class="tp-testimonial-section-title text-center">
-              The Review Are In
+              Opiniones de nuestros clientes
             </h3>
             <div class="row justify-content-center">
               <div class="col-xl-8 col-lg-8 col-md-10">
@@ -41,23 +41,17 @@
                     <div class="tp-testimonial-content">
                       <p>{{ item.desc }}</p>
                     </div>
-                    <div
-                      class="tp-testimonial-user-wrapper d-flex align-items-center justify-content-center"
-                    >
-                      <div
-                        class="tp-testimonial-user d-flex align-items-center"
-                      >
+                    <div class="tp-testimonial-user-wrapper d-flex align-items-center justify-content-center">
+                      <div class="tp-testimonial-user d-flex align-items-center">
                         <div class="tp-testimonial-avater mr-10">
-                          <img :src="item.user" alt="user" />
+                          <img :src="item.user" alt="cliente" />
                         </div>
-                        <div
-                          class="tp-testimonial-user-info tp-testimonial-user-translate"
-                        >
+                        <div class="tp-testimonial-user-info tp-testimonial-user-translate">
                           <h3 class="tp-testimonial-user-title">
                             {{ item.name }}
                           </h3>
                           <span class="tp-testimonial-designation">
-                            {{item.designation}}
+                            {{ item.designation }}
                           </span>
                         </div>
                       </div>
@@ -88,7 +82,6 @@
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Navigation } from "swiper/modules";
 
-// data type
 type ITestimonial = {
   id: number;
   review: number;
@@ -97,30 +90,31 @@ type ITestimonial = {
   name: string;
   designation: string;
 };
+
 const testi_data: ITestimonial[] = [
   {
     id: 1,
     review: 4,
-    desc: "“ How you use the city or town name is up to you. All results may be freely used in any work.”",
+    desc: "Las zapatillas son comodas y estables para entrenar. La atencion fue rapida y me ayudaron con la talla.",
     user: "/img/users/user-2.jpg",
-    name: "Theodore Handle",
-    designation: "CO Founder",
+    name: "Carlos Ramirez",
+    designation: "Cliente Boot Training",
   },
   {
     id: 2,
     review: 5,
-    desc: "“Very happy with our choice to take our daughter to Brave care. The entire team was great! Thank you!”",
+    desc: "Compre para mis rutinas de training y llegaron en buen estado. Me gusto la calidad y el soporte.",
     user: "/img/users/user-3.jpg",
-    name: "John Smith",
-    designation: "UI/UX Designer",
+    name: "Maria Fernanda",
+    designation: "Cliente Boot Training",
   },
   {
     id: 3,
     review: 3,
-    desc: "“Thanks for all your efforts and teamwork over the last several months!  Thank you so much”",
+    desc: "Buena experiencia de compra. Me enviaron fotos del modelo y pude coordinar todo por WhatsApp.",
     user: "/img/users/user-4.jpg",
-    name: "Salim Rana",
-    designation: "Web Developer",
+    name: "Luis Torres",
+    designation: "Cliente Boot Training",
   },
 ];
 </script>

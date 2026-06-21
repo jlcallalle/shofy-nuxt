@@ -5,17 +5,12 @@
         <div class="row align-items-center">
           <div class="col-md-6">
             <div class="tp-footer-copyright">
-              <p>
-                © {{ new Date().getFullYear() }} All Rights Reserved | vue nuxt
-                3 Template by <NuxtLink href="/">ThemePure</NuxtLink>.
-              </p>
+              <p>Copyright {{ new Date().getFullYear() }} Boot Training Peru. Todos los derechos reservados.</p>
             </div>
           </div>
           <div class="col-md-6">
             <div class="tp-footer-payment text-md-end">
-              <p>
-                <img src="/img/footer/footer-pay.png" alt="pay-img" />
-              </p>
+              <p>Especialistas en zapatillas de entrenamiento</p>
             </div>
           </div>
         </div>
@@ -23,4 +18,3 @@
     </div>
   </div>
 </template>
-

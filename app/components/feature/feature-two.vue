@@ -11,8 +11,8 @@
                 </span>
               </div>
               <div class="tp-feature-content-2">
-                <h3 class="tp-feature-title-2">Free Delivary</h3>
-                <p>Orders from all item</p>
+                <h3 class="tp-feature-title-2">Envios a todo el Peru</h3>
+                <p>Para todos nuestros modelos</p>
               </div>
             </div>
           </div>
@@ -24,8 +24,8 @@
                 </span>
               </div>
               <div class="tp-feature-content-2">
-                <h3 class="tp-feature-title-2">Return & Refund</h3>
-                <p>Maney back guarantee</p>
+                <h3 class="tp-feature-title-2">Cambios y devoluciones</h3>
+                <p>Compra con tranquilidad</p>
               </div>
             </div>
           </div>
@@ -37,8 +37,8 @@
                 </span>
               </div>
               <div class="tp-feature-content-2">
-                <h3 class="tp-feature-title-2">Member Discount</h3>
-                <p>On every order over {{formatPrice(140)}}</p>
+                <h3 class="tp-feature-title-2">Promociones especiales</h3>
+                <p>En compras mayores a {{formatPrice(140)}}</p>
               </div>
             </div>
           </div>
@@ -50,7 +50,7 @@
               </span>
             </div>
             <div class="tp-feature-content-2">
-              <h3 class="tp-feature-title-2">Support 24/7</h3>
+              <h3 class="tp-feature-title-2">Atencion 24/7</h3>
               <p>Contactanos las 24 horas del dia</p>
             </div>
           </div>
