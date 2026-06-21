@@ -30,13 +30,13 @@
             class="cartmini__widget-item"
           >
             <div class="cartmini__thumb">
-              <nuxt-link :href="`/product-details/${item.id}`">
+              <nuxt-link :href="`/producto/${item.slug || item.id}`">
                 <img :src="item.img" alt="cart-img" width="70" height="60" />
               </nuxt-link>
             </div>
             <div class="cartmini__content">
               <h5 class="cartmini__title">
-                <nuxt-link :href="`/product-details/${item.id}`">
+                <nuxt-link :href="`/producto/${item.slug || item.id}`">
                   {{ item.title }}
                 </nuxt-link>
               </h5>

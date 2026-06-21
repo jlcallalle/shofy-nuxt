@@ -31,10 +31,11 @@
 
       <!-- testimonial start -->
       <testimonial-fashion/>
+      <!--  <testimonial-beauty/> -->
       <!-- testimonial end -->
 
       <!-- blog start -->
-      <blog-fashion-items/>
+      <!-- <blog-fashion-items/> -->
       <!-- blog end -->
 
       <!-- feature area start -->

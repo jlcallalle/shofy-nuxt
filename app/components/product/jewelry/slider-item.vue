@@ -36,7 +36,7 @@
           class="tp-product-action-btn-3 tp-product-quick-view-btn"
           data-bs-toggle="modal"
           :data-bs-target="`#${utilityStore.modalId}`"
-          @click="utilityStore.handleOpenModal(`product-modal-${item.id}`,item)"
+          @click="utilityStore.handleOpenModal(`product-modal-${item.slug || item.id}`,item)"
         >
           <svg-quick-view />
           <span class="tp-product-tooltip">Quick View</span>
@@ -56,7 +56,7 @@
     </div>
     <div class="tp-category-content-4">
       <h3 class="tp-category-title-4">
-        <nuxt-link :href="`/product-details/${item.id}`">{{item.title}}</nuxt-link>
+        <nuxt-link :href="`/producto/${item.slug || item.id}`">{{item.title}}</nuxt-link>
       </h3>
       <div class="tp-category-price-wrapper-4">
         <span v-if="item.discount > 0" class="tp-category-price-4">

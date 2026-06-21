@@ -4,7 +4,7 @@
       class="tp-product-thumb-2 p-relative z-index-1 fix w-img"
       style="background-color: #f2f3f5"
     >
-      <nuxt-link :href="`/product-details/${item.id}`">
+      <nuxt-link :href="`/producto/${item.slug || item.id}`">
         <img :src="item.img" alt="product-img" />
       </nuxt-link>
 
@@ -39,7 +39,7 @@
             class="tp-product-action-btn-2 tp-product-quick-view-btn"
             data-bs-toggle="modal"
             :data-bs-target="`#${utilityStore.modalId}`"
-            @click="utilityStore.handleOpenModal(`product-modal-${item.id}`,item)"
+            @click="utilityStore.handleOpenModal(`product-modal-${item.slug || item.id}`,item)"
           >
             <svg-quick-view />
             <span class="tp-product-tooltip tp-product-tooltip-right">Vista rapida</span>
@@ -74,7 +74,7 @@
         <a href="#">{{ item.category.name }}</a>
       </div>
       <h3 class="tp-product-title-2">
-        <nuxt-link :href="`/product-details/${item.id}`">{{ item.title }}</nuxt-link>
+        <nuxt-link :href="`/producto/${item.slug || item.id}`">{{ item.title }}</nuxt-link>
       </h3>
       <div class="tp-product-rating-icon tp-product-rating-icon-2">
         <span><i class="fa-solid fa-star"></i></span>

@@ -16,7 +16,7 @@
                                   <div class="tp-compare-thumb">
                                       <img :src="item.img" alt="product">
                                       <h4 class="tp-compare-product-title">
-                                          <nuxt-link :href="`/product-details/${item.id}`">{{ item.title }}</nuxt-link>
+                                          <nuxt-link :href="`/producto/${item.slug || item.id}`">{{ item.title }}</nuxt-link>
                                       </h4>
                                   </div>
                               </td>

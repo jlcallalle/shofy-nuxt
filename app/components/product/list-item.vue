@@ -1,7 +1,7 @@
 <template>
   <div class="tp-product-list-item d-md-flex">
     <div class="tp-product-list-thumb p-relative fix">
-      <nuxt-link :href="`/product-details/${item.id}`" style="height: 310px;background-color: #f2f3f5;">
+      <nuxt-link :href="`/producto/${item.slug || item.id}`" style="height: 310px;background-color: #f2f3f5;">
         <img :src="item.img" alt="product-img" />
       </nuxt-link>
 
@@ -13,7 +13,7 @@
             class="tp-product-action-btn-2 tp-product-quick-view-btn"
             data-bs-toggle="modal"
             :data-bs-target="`#${utilityStore.modalId}`"
-            @click="utilityStore.handleOpenModal(`product-modal-${item.id}`,item)"
+            @click="utilityStore.handleOpenModal(`product-modal-${item.slug || item.id}`,item)"
           >
             <svg-quick-view />
             <span class="tp-product-tooltip tp-product-tooltip-right">Quick View</span>
@@ -49,7 +49,7 @@
           <a href="#">{{ item.category.name }}</a>
         </div>
         <h3 class="tp-product-title-2">
-          <nuxt-link :href="`/product-details/${item.id}`">{{ item.title }}</nuxt-link>
+          <nuxt-link :href="`/producto/${item.slug || item.id}`">{{ item.title }}</nuxt-link>
         </h3>
         <div class="tp-product-rating-icon tp-product-rating-icon-2">
           <span><i class="fa-solid fa-star"></i></span>

@@ -96,9 +96,9 @@ export const shoes_data: ShoeProduct[] = [
     ],
     sizes: allSizes,
     images: [
-      { color: "Blanco", src: "/img/producto/modelob/modelob_blanco.png" },
-      { color: "Azul", src: "/img/producto/modelob/modelob_azul.png" },
-      { color: "Rosa", src: "/img/producto/modelob/modelob_rosado.png" },
+      { color: "Blanco", src: "/img/producto/tenis-bootb-blanco.png" },
+      { color: "Azul", src: "/img/producto/tenis-bootb_azul.png" },
+      { color: "Rosa", src: "/img/producto/tenis-bootb_rosado.png" },
     ],
     featured: true,
     description:
@@ -117,9 +117,17 @@ export const shoes_data: ShoeProduct[] = [
     price: 300,
     discount: 0,
     quantity: 40,
-    colors: allColors,
+    colors: [
+      { name: "Blanco", code: "#F7F4EF" },
+      { name: "Nude", code: "#D8B69A" },
+      { name: "Negro", code: "#111827" },
+    ],
     sizes: allSizes,
-    images: placeholderImages("BOOT Z", allColors),
+    images: [
+      { color: "Blanco", src: "/img/producto/tenis-bootz-blanco.png" },
+      { color: "Nude", src: "/img/producto/tenis-bootz-nude.png" },
+      { color: "Negro", src: "/img/producto/tenis-bootz-negro.png" },
+    ],
     featured: true,
     description:
       "Modelo de entrenamiento con perfil firme, ideal para rutinas de fuerza, circuito y uso diario deportivo.",
@@ -137,9 +145,17 @@ export const shoes_data: ShoeProduct[] = [
     price: 250,
     discount: 0,
     quantity: 40,
-    colors: allColors,
+    colors: [
+      { name: "Blanco", code: "#F7F4EF" },
+      { name: "Negro", code: "#111827" },
+      { name: "Cafe", code: "#6F4E37" },
+    ],
     sizes: allSizes,
-    images: placeholderImages("TENNIS", allColors),
+    images: placeholderImages("TENNIS", [
+      { name: "Blanco", code: "#F7F4EF" },
+      { name: "Negro", code: "#111827" },
+      { name: "Cafe", code: "#6F4E37" },
+    ]),
     featured: true,
     description:
       "Zapatilla ligera para trote, caminata activa y sesiones de cardio con comodidad durante todo el dia.",
@@ -157,9 +173,17 @@ export const shoes_data: ShoeProduct[] = [
     price: 300,
     discount: 0,
     quantity: 40,
-    colors: allColors,
+    colors: [
+      { name: "Blanco", code: "#F7F4EF" },
+      { name: "Negro", code: "#111827" },
+      { name: "Blanco/Negro", code: "#D1D5DB" },
+    ],
     sizes: allSizes,
-    images: placeholderImages("SKULL", allColors),
+    images: placeholderImages("SKULL", [
+      { name: "Blanco", code: "#F7F4EF" },
+      { name: "Negro", code: "#111827" },
+      { name: "Blanco/Negro", code: "#D1D5DB" },
+    ]),
     featured: false,
     description:
       "Modelo urbano con caracter deportivo, pensado para combinar estilo casual con comodidad de entrenamiento.",
@@ -177,9 +201,15 @@ export const shoes_data: ShoeProduct[] = [
     price: 300,
     discount: 0,
     quantity: 40,
-    colors: allColors,
+    colors: [
+      { name: "Blanco", code: "#F7F4EF" },
+      { name: "Color", code: "#D9A441" },
+    ],
     sizes: allSizes,
-    images: placeholderImages("IRON", allColors),
+    images: placeholderImages("IRON", [
+      { name: "Blanco", code: "#F7F4EF" },
+      { name: "Color", code: "#D9A441" },
+    ]),
     featured: true,
     description:
       "Zapatilla robusta para entrenamiento de fuerza, estabilidad y soporte en movimientos explosivos.",

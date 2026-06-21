@@ -53,7 +53,7 @@
                 ></div>
                 <div class="tp-featured-content">
                   <h3 class="tp-featured-title">
-                    <nuxt-link :href="`/product-details/${item.id}`">{{ item.title }}</nuxt-link>
+                    <nuxt-link :href="`/producto/${item.slug || item.id}`">{{ item.title }}</nuxt-link>
                   </h3>
                   <div class="tp-featured-price-wrapper">
                     <div v-if="item.discount > 0">
@@ -72,7 +72,7 @@
                     <span><i class="fa-solid fa-star"></i></span>
                   </div>
                   <div class="tp-featured-btn">
-                    <nuxt-link :href="`/product-details/${item.id}`" class="tp-btn tp-btn-border tp-btn-border-sm">
+                    <nuxt-link :href="`/producto/${item.slug || item.id}`" class="tp-btn tp-btn-border tp-btn-border-sm">
                       Shop Now <svg-right-arrow />
                     </nuxt-link>
                   </div>

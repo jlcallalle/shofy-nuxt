@@ -25,7 +25,7 @@ const productStore = useProductStore();
 let product = ref<IProduct | undefined>();
 useSeoMeta({ title: "Detalle de zapatilla" });
 onMounted(() => {
-  product.value = product_data.find(b => b.id === route.params.id);
+  product.value = product_data.find((item) => item.slug === route.params.id || item.id === route.params.id);
   if(product.value?.img){
     productStore.activeImg  = product.value.img;
   }

@@ -83,7 +83,7 @@
             <button @click="cartStore.addCartProduct(product)" class="tp-product-details-add-to-cart-btn w-100">Agregar al carrito</button>
           </div>
       </div>
-      <nuxt-link :href="`/product-details/${product.id}`" class="tp-product-details-buy-now-btn w-100 text-center">Comprar ahora</nuxt-link>
+      <nuxt-link :href="`/producto/${product.slug || product.id}`" class="tp-product-details-buy-now-btn w-100 text-center">Comprar ahora</nuxt-link>
     </div>
     <div class="tp-product-details-action-sm">
       <button @click="compareStore.add_compare_product(product)" type="button" class="tp-product-details-action-sm-btn">

@@ -52,7 +52,7 @@
                 <div class="tp-category-content-2">
                   <span>From {{formatPrice(item.price)}}</span>
                   <h3 class="tp-category-title-2">
-                    <nuxt-link :href="`/product-details/${item.id}`">{{item.title}}</nuxt-link>
+                    <nuxt-link :href="`/producto/${item.slug || item.id}`">{{item.title}}</nuxt-link>
                   </h3>
                   <div class="tp-category-btn-2">
                     <button

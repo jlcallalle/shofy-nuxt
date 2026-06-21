@@ -4,7 +4,7 @@
       class="tp-product-thumb-3 mb-15 fix p-relative z-index-1"
       :style="`background-color: ${style_2 ? '#f6f6f6' : '#fff'};`"
     >
-      <nuxt-link :href="`/product-details/${item.id}`">
+      <nuxt-link :href="`/producto/${item.slug || item.id}`">
         <img :src="item.img" alt="product-img" />
       </nuxt-link>
 
@@ -35,7 +35,7 @@
             class="tp-product-action-btn-3 tp-product-quick-view-btn" 
             data-bs-toggle="modal"
             :data-bs-target="`#${utilityStore.modalId}`"
-            @click="utilityStore.handleOpenModal(`product-modal-${item.id}`,item)"
+            @click="utilityStore.handleOpenModal(`product-modal-${item.slug || item.id}`,item)"
           >
             <svg-quick-view />
             <span class="tp-product-tooltip">Quick View</span>
@@ -67,7 +67,7 @@
         <span>{{item.category.name}}</span>
       </div>
       <h3 class="tp-product-title-3">
-        <nuxt-link :href="`/product-details/${item.id}`">{{ item.title }}</nuxt-link>
+        <nuxt-link :href="`/producto/${item.slug || item.id}`">{{ item.title }}</nuxt-link>
       </h3>
       <div class="tp-product-price-wrapper-3">
         <span v-if="item.discount > 0" class="tp-product-price-3">

@@ -1,7 +1,7 @@
 <template>
   <div :class="`${offer_style ? 'tp-product-offer-item' : 'mb-25'} tp-product-item transition-3`">
     <div class="tp-product-thumb p-relative fix m-img">
-      <nuxt-link :href="`/product-details/${item.id}`">
+      <nuxt-link :href="`/producto/${item.slug || item.id}`">
         <img :src="item.img" alt="product-electronic" />
       </nuxt-link>
 
@@ -36,7 +36,7 @@
             class="tp-product-action-btn tp-product-quick-view-btn"
             data-bs-toggle="modal"
             :data-bs-target="`#${utilityStore.modalId}`"
-            @click="utilityStore.handleOpenModal(`product-modal-${item.id}`,item)"
+            @click="utilityStore.handleOpenModal(`product-modal-${item.slug || item.id}`,item)"
           >
             <svg-quick-view />
             <span class="tp-product-tooltip">Quick View</span>
@@ -57,10 +57,10 @@
     <!-- product content -->
     <div class="tp-product-content">
       <div class="tp-product-category">
-        <nuxt-link :href="`/product-details/${item.id}`">{{ item.category.name }}</nuxt-link>
+        <nuxt-link :href="`/producto/${item.slug || item.id}`">{{ item.category.name }}</nuxt-link>
       </div>
       <h3 class="tp-product-title">
-        <nuxt-link :href="`/product-details/${item.id}`">
+        <nuxt-link :href="`/producto/${item.slug || item.id}`">
           {{ item.title }}
         </nuxt-link>
       </h3>
