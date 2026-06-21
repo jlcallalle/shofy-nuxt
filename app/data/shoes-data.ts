@@ -146,16 +146,16 @@ export const shoes_data: ShoeProduct[] = [
     discount: 0,
     quantity: 40,
     colors: [
+      { name: "Nude", code: "#6F4E37" },
       { name: "Blanco", code: "#F7F4EF" },
       { name: "Negro", code: "#111827" },
-      { name: "Cafe", code: "#6F4E37" },
     ],
     sizes: allSizes,
-    images: placeholderImages("TENNIS", [
-      { name: "Blanco", code: "#F7F4EF" },
-      { name: "Negro", code: "#111827" },
-      { name: "Cafe", code: "#6F4E37" },
-    ]),
+    images: [
+      { color: "Nude", src: "/img/producto/tenis-cafe.png" },
+      { color: "Blanco", src: "/img/producto/tenis-blanco.png" },
+      { color: "Negro", src: "/img/producto/tenis-negro.png" },
+    ],
     featured: true,
     description:
       "Zapatilla ligera para trote, caminata activa y sesiones de cardio con comodidad durante todo el dia.",
