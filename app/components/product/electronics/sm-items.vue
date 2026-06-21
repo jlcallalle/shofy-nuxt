@@ -62,7 +62,7 @@
 </template>
 
 <script setup lang="ts">
-import product_data from "@/data/product-data";
+import product_data from "@/data/shoes-data";
 
 const all_products = product_data;
 const discount_products = all_products

@@ -90,7 +90,7 @@
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { EffectFade, Pagination } from "swiper/modules";
-import product_data from "@/data/product-data";
+import product_data from "@/data/shoes-data";
 
 const banner_data: {
   bg: string;

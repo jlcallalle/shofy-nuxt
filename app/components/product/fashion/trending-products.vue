@@ -81,7 +81,7 @@
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination } from "swiper/modules";
-import product_data from "@/data/product-data";
+import product_data from "@/data/shoes-data";
 
 const product_items = product_data.filter(p => p.productType === 'fashion').slice(-4);
 </script>

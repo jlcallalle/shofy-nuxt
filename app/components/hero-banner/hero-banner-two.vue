@@ -35,7 +35,7 @@
                 <span>{{item.subtitle}}</span>
                 <h3 class="tp-slider-title-2">{{item.title}}</h3>
                 <div class="tp-slider-btn-2">
-                  <nuxt-link href="/productos" class="tp-btn tp-btn-border">Shop Collection</nuxt-link>
+                  <nuxt-link href="/productos" class="tp-btn tp-btn-border">Ver zapatillas</nuxt-link>
                 </div>
               </div>
             </div>
@@ -81,26 +81,26 @@ type ISliderData = {
 const slider_data: ISliderData[] = [
   {
     id: 1,
-    subtitle: "New Arrivals 2023",
-    title: "The Clothing Collection",
+    subtitle: "Boot Training Peru",
+    title: "Zapatillas para entrenar",
     img: "/img/slider/2/slider-1a.png",
   },
   {
     id: 2,
-    subtitle: "Best Selling 2023",
-    title: "The Summer Collection",
+    subtitle: "Nuevos modelos",
+    title: "Training, Running y Casual",
     img: "/img/slider/2/slider-2a.png",
   },
   {
     id: 3,
-    subtitle: "Winter Has Arrived",
-    title: "Amazing New designs",
+    subtitle: "Hechas para moverte",
+    title: "BOOT B, BOOT Z y mas",
     img: "/img/slider/2/slider-4.png",
   },
   {
     id: 4,
-    subtitle: "Winter Has Arrived",
-    title: "Amazing New designs",
+    subtitle: "Boot Training Peru",
+    title: "Zapatillas con actitud",
     img: "/img/slider/2/slider-5.png",
   },
 ];

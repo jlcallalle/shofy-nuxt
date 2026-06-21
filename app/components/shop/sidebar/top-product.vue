@@ -45,7 +45,7 @@
 </template>
 
 <script setup lang="ts">
-import product_data from "@/data/product-data";
+import product_data from "@/data/shoes-data";
 import { type IReview, type IProduct } from "@/types/product-type";
 
 let topRatedProducts: { product: IProduct; rating: number }[] = product_data

@@ -97,7 +97,7 @@
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Navigation } from "swiper/modules";
-import product_data from "@/data/product-data";
+import product_data from "@/data/shoes-data";
 
 const fashion_prd = product_data
   .filter((p) => p.productType === "fashion")

@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import product_data from '@/data/product-data';
+import product_data from '@/data/shoes-data';
 import { useProductStore } from '@/pinia/useProductStore';
 import { type IProduct } from '@/types/product-type';
 const route = useRoute()
@@ -23,7 +23,7 @@ const route = useRoute()
 const productStore = useProductStore();
 
 let product = ref<IProduct | undefined>();
-useSeoMeta({ title: "Product Details Page" });
+useSeoMeta({ title: "Detalle de zapatilla" });
 onMounted(() => {
   product.value = product_data.find(b => b.id === route.params.id);
   if(product.value?.img){

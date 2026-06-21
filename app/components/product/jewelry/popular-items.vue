@@ -69,7 +69,7 @@
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Scrollbar } from "swiper/modules";
-import product_data from "@/data/product-data";
+import product_data from "@/data/shoes-data";
 
 const jewelryPopularItem = product_data
   .filter((p) => p.productType === "jewelry")

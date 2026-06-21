@@ -2,7 +2,7 @@
   <div class="offcanvas__category pb-40">
     <button @click="toggleCategoryActive" class="tp-offcanvas-category-toggle">
       <i class="fa-solid fa-bars"></i>
-      All Categories
+      Categorias
     </button>
     <div class="tp-category-mobile-menu">
       <nav

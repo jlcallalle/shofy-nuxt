@@ -8,13 +8,10 @@
         <div class="tp-header-search-category">
           <ui-nice-select
             :options="[
-              { value: 'select-category', text: 'Select Category' },
-              { value: 'electronics', text: 'Electronics' },
-              { value: 'fashion', text: 'Fashion' },
-              { value: 'beauty', text: 'Beauty' },
-              { value: 'jewelry', text: 'Jewelry' },
+              { value: 'select-category', text: 'Categorias' },
+              { value: 'fashion', text: 'Zapatillas Boot Training' },
             ]"
-            name="Select Category"
+            name="Categorias"
             :default-current="0"
             @onChange="changeHandler"
           />
@@ -35,7 +32,7 @@ let searchText = ref<string>('');
 let productType = ref<string>('');
 
 const changeHandler = (e: { value: string; text: string }) => {
-  productType.value = e.value;
+  productType.value = e.value === "select-category" ? "" : e.value;
 };
 // handleSubmit
 const handleSubmit = () => {

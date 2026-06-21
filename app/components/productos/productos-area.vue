@@ -39,8 +39,8 @@
                     </div>
                     <div class="tp-shop-top-result">
                       <p>
-                        Showing 1–{{ store.filteredProducts?.slice(startIndex,endIndex).length }} of
-                        {{ product_data.length }} results
+                        Mostrando 1-{{ store.filteredProducts?.slice(startIndex,endIndex).length }} de
+                        {{ product_data.length }} zapatillas
                       </p>
                     </div>
                   </div>
@@ -113,7 +113,7 @@
 </template>
 
 <script setup lang="ts">
-import product_data from "@/data/product-data";
+import product_data from "@/data/shoes-data";
 import { useProductFilterStore } from "@/pinia/useProductFilterStore";
 import { type IProduct } from "@/types/product-type";
 const route = useRoute();

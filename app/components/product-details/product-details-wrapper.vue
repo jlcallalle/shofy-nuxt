@@ -1,7 +1,7 @@
 <template>
   <div class="tp-product-details-wrapper has-sticky">
     <div class="tp-product-details-category">
-      <span>{{product.parent}}</span>
+      <span>Boot Training Peru / {{product.parent}}</span>
     </div>
     <h3 class="tp-product-details-title">{{product.title}}</h3>
 
@@ -19,7 +19,7 @@
             <span><i class="fa-solid fa-star"></i></span>
           </div>
           <div class="tp-product-details-reviews">
-            <span>({{product.reviews?.length}} Reviews)</span>
+            <span>({{product.reviews?.length}} resenas)</span>
           </div>
       </div>
     </div>
@@ -39,7 +39,7 @@
     <!-- variations -->
     <div v-if="hasColorData" class="tp-product-details-variation">
     <div class="tp-product-details-variation-item">
-      <h4 class="tp-product-details-variation-title">Color :</h4>
+      <h4 class="tp-product-details-variation-title">Color:</h4>
       <div class="tp-product-details-variation-list">
         <button
           v-for="(item, i) in product.imageURLs"
@@ -66,7 +66,7 @@
 
     <!-- actions -->
     <div class="tp-product-details-action-wrapper">
-      <h3 class="tp-product-details-action-title">Quantity</h3>
+      <h3 class="tp-product-details-action-title">Cantidad</h3>
       <div class="tp-product-details-action-item-wrapper d-flex align-items-center">
           <div class="tp-product-details-quantity">
             <div class="tp-product-quantity mb-15 mr-15">
@@ -80,23 +80,23 @@
             </div>
           </div>
           <div class="tp-product-details-add-to-cart mb-15 w-100">
-            <button @click="cartStore.addCartProduct(product)" class="tp-product-details-add-to-cart-btn w-100">Add To Cart</button>
+            <button @click="cartStore.addCartProduct(product)" class="tp-product-details-add-to-cart-btn w-100">Agregar al carrito</button>
           </div>
       </div>
-      <nuxt-link :href="`/product-details/${product.id}`" class="tp-product-details-buy-now-btn w-100 text-center">Buy Now</nuxt-link>
+      <nuxt-link :href="`/product-details/${product.id}`" class="tp-product-details-buy-now-btn w-100 text-center">Comprar ahora</nuxt-link>
     </div>
     <div class="tp-product-details-action-sm">
       <button @click="compareStore.add_compare_product(product)" type="button" class="tp-product-details-action-sm-btn">
           <svg-compare-3/>
-          Compare
+          Comparar
       </button>
       <button  @click="wishlistStore.add_wishlist_product(product)" type="button" class="tp-product-details-action-sm-btn">
           <svg-wishlist-3/>
-          Add Wishlist
+          Favoritos
       </button>
       <button type="button" class="tp-product-details-action-sm-btn">
           <svg-ask-question/>
-          Ask a question
+          Hacer una pregunta
       </button>
     </div>
 
@@ -107,16 +107,16 @@
           <p>{{product.sku}}</p>
       </div>
       <div class="tp-product-details-query-item d-flex align-items-center">
-          <span>Category:  </span>
+          <span>Categoria:  </span>
           <p>{{product.parent}}</p>
       </div>
       <div class="tp-product-details-query-item d-flex align-items-center">
-          <span>Tag: </span>
-          <p>Android</p>
+          <span>Marca: </span>
+          <p>Boot Training Peru</p>
       </div>
     </div>
     <div class="tp-product-details-social">
-      <span>Share: </span>
+      <span>Compartir: </span>
       <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
       <a href="#"><i class="fa-brands fa-twitter"></i></a>
       <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -124,8 +124,8 @@
     </div>
     <div class="tp-product-details-msg mb-15">
       <ul>
-          <li>30 days easy returns</li>
-          <li>Order yours before 2.30pm for same day dispatch</li>
+          <li>Zapatillas Boot Training Peru</li>
+          <li>Stock disponible por talla</li>
       </ul>
     </div>
     <div class="tp-product-details-payment d-flex align-items-center flex-wrap justify-content-between">

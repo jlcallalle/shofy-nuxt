@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- breadcrumb start -->
-    <breadcrumb-1 title="Search Products" subtitle="Search Products" />
+    <breadcrumb-1 title="Buscar zapatillas" subtitle="Buscar zapatillas" />
     <!-- breadcrumb end -->
 
     <!-- shop area start -->
@@ -16,10 +16,10 @@
                     <div class="tp-shop-top-left d-flex align-items-center">
                       <div class="tp-shop-top-result">
                         <p>
-                          Showing 1–{{
+                          Mostrando 1-{{
                             store.searchFilteredItems?.slice(0, perView).length
                           }}
-                          of {{ product_data.length }} results
+                          de {{ product_data.length }} zapatillas
                         </p>
                       </div>
                     </div>
@@ -59,10 +59,10 @@
                 type="button"
                 class="btn-loadmore tp-btn tp-btn-border tp-btn-border-primary"
               >
-                Load More Products
+                Ver mas zapatillas
               </button>
 
-              <p v-else class="btn-loadmore-text">End Of Products</p>
+              <p v-else class="btn-loadmore-text">No hay mas zapatillas</p>
             </div>
           </div>
         </div>
@@ -73,10 +73,10 @@
 </template>
 
 <script setup lang="ts">
-useSeoMeta({ title: "Search Page" });
+useSeoMeta({ title: "Buscar zapatillas" });
 
 import { ref } from "vue";
-import product_data from "@/data/product-data";
+import product_data from "@/data/shoes-data";
 import { useProductFilterStore } from "@/pinia/useProductFilterStore";
 
 let perView = ref<number>(9);

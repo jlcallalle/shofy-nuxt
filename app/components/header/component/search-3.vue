@@ -13,13 +13,13 @@
               <div class="tp-search-input mb-10">
                 <input
                   type="text"
-                  placeholder="Search for product..."
+                  placeholder="Buscar zapatillas..."
                   v-model="searchText"
                 />
                 <button type="submit"><i class="flaticon-search-1"></i></button>
               </div>
               <div class="tp-search-category">
-                <span>Search by : </span>
+                <span>Buscar por: </span>
                 <a
                   v-for="(c, i) in categories"
                   :key="i"
@@ -49,7 +49,7 @@ const router = useRouter();
 let searchText = ref<string>("");
 let productType = ref<string>("");
 const utilityStore = useUtilityStore();
-const categories: string[] = ["electronics", "fashion", "beauty", "jewelry"];
+const categories: string[] = ["fashion"];
 
 // handleSubmit
 const handleSubmit = () => {

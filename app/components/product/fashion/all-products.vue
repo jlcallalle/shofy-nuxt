@@ -29,7 +29,7 @@
                 >
                   {{ tab }}
                   <span class="tp-product-tab-tooltip">{{
-                    tab === "All Collection"
+                    tab === "Todos"
                       ? allProducts.length
                       : allProducts.filter(
                           (p) =>
@@ -60,10 +60,10 @@
 </template>
 
 <script setup lang="ts">
-import product_data from "@/data/product-data";
+import product_data from "@/data/shoes-data";
 import { ref, computed } from "vue";
 // tabs
-const tabs: string[] = ["All Collection", "Shoes", "Clothing", "Bags"];
+const tabs: string[] = ["Todos", "Training", "Running", "Casual"];
 const activeTab = ref<string>(tabs[0]);
 const fashion_prd = product_data.filter((p) => p.productType === "fashion");
 const allProducts = fashion_prd;
@@ -72,14 +72,14 @@ const handleActiveTab = (tab: string) => {
   activeTab.value = tab;
 };
 const filteredProducts = computed(() => {
-  if (activeTab.value === "All Collection") {
+  if (activeTab.value === "Todos") {
     return allProducts;
-  } else if (activeTab.value === "Shoes") {
-    return allProducts.filter((p) => p.category.name === "Shoes");
-  } else if (activeTab.value === "Clothing") {
-    return allProducts.filter((p) => p.category.name === "Clothing");
-  } else if (activeTab.value === "Bags") {
-    return allProducts.filter((p) => p.category.name === "Bags");
+  } else if (activeTab.value === "Training") {
+    return allProducts.filter((p) => p.category.name === "Training");
+  } else if (activeTab.value === "Running") {
+    return allProducts.filter((p) => p.category.name === "Running");
+  } else if (activeTab.value === "Casual") {
+    return allProducts.filter((p) => p.category.name === "Casual");
   } else {
     return allProducts;
   }

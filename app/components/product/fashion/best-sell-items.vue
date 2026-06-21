@@ -35,7 +35,7 @@
 </template>
 
 <script setup lang="ts">
-import product_data from "@/data/product-data";
+import product_data from "@/data/shoes-data";
 
 const products = product_data
   .filter((p) => p.productType === "fashion")

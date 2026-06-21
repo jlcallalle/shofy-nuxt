@@ -1,5 +1,5 @@
 import { ref } from "vue";
-import product_data from '@/data/product-data';
+import product_data from '@/data/shoes-data';
 import { defineStore } from "pinia";
 
 export const useProductStore = defineStore("product", () => {

@@ -2,13 +2,13 @@
     <div class="tp-shop-top-select text-md-end">
       <ui-nice-select
         :options="[
-          { value: 'default-sorting', text: 'Default Sorting' },
-          { value: 'low-to-high', text: 'Low to Hight' },
-          { value: 'high-to-low', text: 'High to Low' },
-          { value: 'new-added', text: 'New Added' },
-          { value: 'on-sale', text: 'On Sale' },
+          { value: 'default-sorting', text: 'Orden predeterminado' },
+          { value: 'low-to-high', text: 'Menor precio' },
+          { value: 'high-to-low', text: 'Mayor precio' },
+          { value: 'new-added', text: 'Nuevos modelos' },
+          { value: 'on-sale', text: 'En oferta' },
         ]"
-        name="Select Category"
+        name="Ordenar"
         :default-current="0"
         @onChange="handleSelect"
       />

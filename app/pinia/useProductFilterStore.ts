@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import product_data from "@/data/product-data";
+import product_data from "@/data/shoes-data";
 import {formatString} from '@/utils/index';
 
 export const useProductFilterStore = defineStore("product_filter", () => {
@@ -67,7 +67,7 @@ export const useProductFilterStore = defineStore("product_filter", () => {
     if (selectVal.value) {
       if (selectVal.value === "default-sorting") {
         filteredProducts = [...product_data];
-      } else if (selectVal.value === "low-to-hight") {
+      } else if (selectVal.value === "low-to-high") {
         filteredProducts = filteredProducts.slice().sort((a, b) => a.price - b.price);
       } else if (selectVal.value === "high-to-low") {
         filteredProducts = filteredProducts.slice().sort((a, b) => b.price - a.price);
@@ -93,12 +93,12 @@ export const useProductFilterStore = defineStore("product_filter", () => {
         prd.title.toLowerCase().includes(searchText.toLowerCase())
       );
     } 
-    if (!searchText && productType) { 
+    if (!searchText && productType && productType !== "select-category") {
       filteredProducts = filteredProducts.filter(
         (prd) => prd.productType.toLowerCase() === productType.toLowerCase()
       );
     } 
-    if (searchText && productType) { 
+    if (searchText && productType && productType !== "select-category") {
       filteredProducts = filteredProducts.filter(
         (prd) => prd.productType.toLowerCase() === productType.toLowerCase()
       ).filter(p => p.title.toLowerCase().includes(searchText.toLowerCase()));

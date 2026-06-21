@@ -3,7 +3,7 @@ import { ref, watch } from "vue";
 import { defineStore } from "pinia";
 import { type IProduct } from '@/types/product-type';
 import { useProductStore } from './useProductStore';
-import product_data from '@/data/product-data';
+import product_data from '@/data/shoes-data';
 
 export const useUtilityStore = defineStore("utility", () => {
   const route = useRoute();

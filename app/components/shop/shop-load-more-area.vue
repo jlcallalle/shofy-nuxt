@@ -96,7 +96,7 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import product_data from "@/data/product-data";
+import product_data from "@/data/shoes-data";
 import { useProductFilterStore } from "@/pinia/useProductFilterStore";
 
 const active_tab = ref<string>("grid");

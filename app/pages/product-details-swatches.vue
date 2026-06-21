@@ -15,9 +15,9 @@
 </template>
 
 <script setup lang="ts">
-import product_data from '@/data/product-data';
+import product_data from '@/data/shoes-data';
 import { useProductStore } from '@/pinia/useProductStore';
-useSeoMeta({ title: "Product Details With Variation Swatches Page" });
+useSeoMeta({ title: "Detalle de zapatilla" });
 
 const product = product_data[0];
 const productStore = useProductStore();

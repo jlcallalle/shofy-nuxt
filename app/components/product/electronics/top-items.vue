@@ -41,7 +41,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted,computed } from 'vue';
-import product_data from '@/data/product-data';
+import product_data from '@/data/shoes-data';
 
 let active_tab = ref('New')
 

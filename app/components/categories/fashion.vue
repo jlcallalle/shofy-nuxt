@@ -23,7 +23,7 @@
               <a
                 @click="handleParentCategory(item.parent)"
                 class="tp-btn tp-btn-border tp-btn-border-sm cursor-pointer">
-                Shop Now
+                Ver productos
                 <svg-right-arrow />
               </a>
             </div>

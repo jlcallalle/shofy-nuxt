@@ -71,7 +71,7 @@
 import { ref, onMounted, computed, watch } from "vue";
 const activeRef = ref<HTMLButtonElement | null>(null);
 const activeMarker = ref<HTMLSpanElement | null>(null);
-import product_data from "@/data/product-data";
+import product_data from "@/data/shoes-data";
 
 let active_tab = ref("All Collection");
 // tabs

@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2025-01-27",
-  devtools: { enabled: true },
+  devtools: { enabled: process.env.NUXT_DEVTOOLS_ENABLED !== 'false' },
   dir: {
     public: 'app/public',
   },
@@ -22,7 +22,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "Shofy - Multipurpose eCommerce Vue Nuxt 3 Template",
+      title: "Boot Training Peru - Tienda de zapatillas",
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       script: [

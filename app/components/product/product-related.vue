@@ -3,8 +3,8 @@
     <div class="container">
       <div class="row">
         <div class="tp-section-title-wrapper-6 text-center mb-40">
-          <span class="tp-section-title-pre-6">Next day Products</span>
-          <h3 class="tp-section-title-6">Related Products</h3>
+          <span class="tp-section-title-pre-6">Boot Training Peru</span>
+          <h3 class="tp-section-title-6">Zapatillas relacionadas</h3>
         </div>
       </div>
       <div class="row">
@@ -28,7 +28,7 @@
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Scrollbar } from "swiper/modules";
-import product_data from "@/data/product-data";
+import product_data from "@/data/shoes-data";
 // props
 const props = defineProps<{ productId: string; category: string }>();
 // related_products

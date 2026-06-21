@@ -106,7 +106,7 @@
 
 <script setup lang="ts">
 import { ref, watch } from "vue";
-import product_data from "@/data/product-data";
+import product_data from "@/data/shoes-data";
 import { useProductFilterStore } from "@/pinia/useProductFilterStore";
 import { useProductStore } from "@/pinia/useProductStore";
 import { type IProduct } from "@/types/product-type";

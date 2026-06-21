@@ -76,7 +76,7 @@
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination, Navigation } from "swiper/modules";
 
-import product_data from "@/data/product-data";
+import product_data from "@/data/shoes-data";
 
 const new_arrivals = product_data.filter(p => p.productType === 'electronics').slice(-5);
 </script>

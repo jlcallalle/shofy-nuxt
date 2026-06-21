@@ -10,7 +10,7 @@
 
       <!-- product badge -->
       <div class="tp-product-badge">
-        <span v-if="item.status === 'out-of-stock'" class="product-hot">out-of-stock</span>
+        <span v-if="item.status === 'out-of-stock'" class="product-hot">sin stock</span>
       </div>
 
       <!-- product action -->
@@ -23,7 +23,7 @@
             :class="`tp-product-action-btn-2 tp-product-add-cart-btn ${isItemInCart(item)? 'active': ''}`"
           >
             <svg-add-cart />
-            <span class="tp-product-tooltip tp-product-tooltip-right">Add to Cart</span>
+            <span class="tp-product-tooltip tp-product-tooltip-right">Agregar al carrito</span>
           </button>
           <nuxt-link
             v-if="isItemInCart(item)"
@@ -31,7 +31,7 @@
             :class="`tp-product-action-btn-2 tp-product-add-cart-btn ${isItemInCart(item)? 'active': ''}`"
           >
             <svg-add-cart />
-            <span class="tp-product-tooltip tp-product-tooltip-right">View Cart</span>
+            <span class="tp-product-tooltip tp-product-tooltip-right">Ver carrito</span>
           </nuxt-link>
 
           <button
@@ -42,7 +42,7 @@
             @click="utilityStore.handleOpenModal(`product-modal-${item.id}`,item)"
           >
             <svg-quick-view />
-            <span class="tp-product-tooltip tp-product-tooltip-right">Quick View</span>
+            <span class="tp-product-tooltip tp-product-tooltip-right">Vista rapida</span>
           </button>
 
           <button
@@ -52,7 +52,7 @@
           >
             <svg-wishlist />
             <span class="tp-product-tooltip tp-product-tooltip-right">
-              {{ isItemInWishlist(item) ? 'Remove From Wishlist' : 'Add To Wishlist' }}
+              {{ isItemInWishlist(item) ? 'Quitar de favoritos' : 'Agregar a favoritos' }}
             </span>
           </button>
 
@@ -63,7 +63,7 @@
           >
             <svg-compare-2 />
             <span class="tp-product-tooltip tp-product-tooltip-right">
-              {{ isItemInCompare(item) ? 'Remove From Compare' : 'Add To Compare' }}
+              {{ isItemInCompare(item) ? 'Quitar de comparar' : 'Comparar' }}
             </span>
           </button>
         </div>
