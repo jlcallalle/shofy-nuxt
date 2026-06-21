@@ -40,7 +40,6 @@ export interface ShoeProduct {
 }
 
 const allSizes: ShoeSizeStock[] = [
-  { size: "33", stock: 5 },
   { size: "34", stock: 5 },
   { size: "35", stock: 5 },
   { size: "36", stock: 5 },

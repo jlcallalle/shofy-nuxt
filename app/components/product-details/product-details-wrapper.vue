@@ -28,7 +28,7 @@
     <!-- price -->
     <div class="tp-product-details-price-wrapper mb-20">
       <div v-if="product.discount > 0">
-          <span class="tp-product-details-price old-price">{{ formatPrice(product.price,false) }}</span>
+          <span class="tp-product-details-price old-price mr-5">{{ formatPrice(product.price,false) }}</span>
           <span class="tp-product-details-price new-price">
             {{formatPrice((Number(product.price) - (Number(product.price) * Number(product.discount)) / 100))}}
           </span>
@@ -53,6 +53,20 @@
           <span v-if="item.color && item.color.name" class="tp-color-variation-tootltip">
             {{ item.color.name }}
           </span>
+        </button>
+      </div>
+    </div>
+    <div v-if="availableSizes.length" class="tp-product-details-variation-item">
+      <h4 class="tp-product-details-variation-title">Talla:</h4>
+      <div class="tp-product-details-size-list">
+        <button
+          v-for="size in availableSizes"
+          :key="size"
+          @click="selectedSize = size"
+          type="button"
+          :class="['tp-product-details-size-btn', selectedSize === size ? 'active' : '']"
+        >
+          {{ size }}
         </button>
       </div>
     </div>
@@ -161,16 +175,32 @@ const props = withDefaults(defineProps<{product:IProduct;isShowBottom?:boolean}>
   isShowBottom:true,
 })
 let textMore = ref<boolean>(false)
+const defaultSizes = ["34", "35", "36", "37", "38", "39", "40"];
+const selectedSize = ref<string>(props.product.sizes?.[0] || defaultSizes[0]);
 
 const hasColorData = computed(() =>
   props.product.imageURLs.some(item => item?.color && item?.color?.name)
+);
+
+const availableSizes = computed(() => props.product.sizes?.length ? props.product.sizes : defaultSizes);
+const selectedColor = computed(() => {
+  const activeImage = props.product.imageURLs.find((item) => item.img === productStore.activeImg);
+
+  return activeImage?.color?.name || props.product.imageURLs[0]?.color?.name || "No especificado";
+});
+
+watch(
+  () => props.product.id,
+  () => {
+    selectedSize.value = availableSizes.value[0] || defaultSizes[0];
+  }
 );
 
 const whatsappUrl = computed(() => {
   const finalPrice = props.product.discount > 0
     ? Number(props.product.price) - (Number(props.product.price) * Number(props.product.discount)) / 100
     : Number(props.product.price);
-  const message = `Hola, deseo comprar ${props.product.title}. Cantidad: ${cartStore.orderQuantity}. Precio: S/ ${finalPrice.toFixed(2)}.`;
+  const message = `Hola, deseo comprar ${props.product.title}. Color: ${selectedColor.value}. Talla: ${selectedSize.value}. Cantidad: ${cartStore.orderQuantity}. Precio: S/ ${finalPrice.toFixed(2)}.`;
 
   return `https://api.whatsapp.com/send?phone=51947724459&text=${encodeURIComponent(message)}`;
 });
@@ -203,5 +233,32 @@ const whatsappUrl = computed(() => {
 
 .tp-product-details-whatsapp-btn i {
   font-size: 16px;
+}
+
+.tp-product-details-size-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tp-product-details-size-btn {
+  min-width: 44px;
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #111111;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  transition: all 0.2s ease;
+}
+
+.tp-product-details-size-btn:hover,
+.tp-product-details-size-btn.active {
+  border-color: #118c4f;
+  background-color: #118c4f;
+  color: #ffffff;
 }
 </style>
