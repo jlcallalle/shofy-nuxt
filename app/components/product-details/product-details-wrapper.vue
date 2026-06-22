@@ -105,7 +105,7 @@
             </a>
           </div>
       </div>
-      <!-- <nuxt-link :href="`/producto/${product.slug || product.id}`" class="tp-product-details-buy-now-btn w-100 text-center">Comprar ahora</nuxt-link> -->
+      <!-- <nuxt-link :href="whatsappUrl" class="tp-product-details-buy-now-btn w-100 text-center">Comprar por WhatsApp</nuxt-link> -->
     </div>
     <!-- <div class="tp-product-details-action-sm">
       <button @click="compareStore.add_compare_product(product)" type="button" class="tp-product-details-action-sm-btn">
@@ -215,7 +215,7 @@ const whatsappUrl = computed(() => {
   gap: 8px;
   min-height: 38px;
   padding: 11px 16px;
-  border-radius: 5px;
+ /*  border-radius: 5px; */
   background-color: #118c4f;
   color: #ffffff;
   font-size: 15px;

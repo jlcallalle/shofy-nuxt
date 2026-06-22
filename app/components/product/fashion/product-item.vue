@@ -25,7 +25,7 @@
             <svg-add-cart />
             <span class="tp-product-tooltip tp-product-tooltip-right">Agregar al carrito</span>
           </button>
-          <nuxt-link
+         <!--  <nuxt-link
             v-if="isItemInCart(item)"
             href="/cart"
             :class="`tp-product-action-btn-2 tp-product-add-cart-btn ${isItemInCart(item)? 'active': ''}`"
@@ -33,7 +33,7 @@
             <svg-add-cart />
             <span class="tp-product-tooltip tp-product-tooltip-right">Ver carrito</span>
           </nuxt-link>
-
+ -->
           <button
             type="button"
             class="tp-product-action-btn-2 tp-product-quick-view-btn"
@@ -45,7 +45,7 @@
             <span class="tp-product-tooltip tp-product-tooltip-right">Vista rapida</span>
           </button>
 
-          <button
+          <!-- <button
             @click="wishlistStore.add_wishlist_product(item)"
             type="button"
             :class="`tp-product-action-btn-2 tp-product-add-to-wishlist-btn ${isItemInWishlist(item)? 'active': ''}`"
@@ -54,9 +54,9 @@
             <span class="tp-product-tooltip tp-product-tooltip-right">
               {{ isItemInWishlist(item) ? 'Quitar de favoritos' : 'Agregar a favoritos' }}
             </span>
-          </button>
+          </button> -->
 
-          <button
+          <!-- <button
             @click="compareStore.add_compare_product(item)"
             type="button"
             :class="`tp-product-action-btn-2 tp-product-add-to-compare-btn ${isItemInCompare(item) ? 'active': ''}`"
@@ -65,7 +65,7 @@
             <span class="tp-product-tooltip tp-product-tooltip-right">
               {{ isItemInCompare(item) ? 'Quitar de comparar' : 'Comparar' }}
             </span>
-          </button>
+          </button> -->
         </div>
       </div>
     </div>
