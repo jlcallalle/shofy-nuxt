@@ -27,13 +27,7 @@
 
     <!-- price -->
     <div class="tp-product-details-price-wrapper mb-20">
-      <div v-if="product.discount > 0">
-          <span class="tp-product-details-price old-price mr-5">{{ formatPrice(product.price,false) }}</span>
-          <span class="tp-product-details-price new-price">
-            {{formatPrice((Number(product.price) - (Number(product.price) * Number(product.discount)) / 100))}}
-          </span>
-        </div>
-      <span v-else class="tp-product-details-price old-price">{{ formatPrice(product.price) }}</span>
+      <span class="tp-product-details-price new-price">{{ formatPrice(product.price) }}</span>
     </div>
 
     <!-- variations -->
@@ -197,9 +191,7 @@ watch(
 );
 
 const whatsappUrl = computed(() => {
-  const finalPrice = props.product.discount > 0
-    ? Number(props.product.price) - (Number(props.product.price) * Number(props.product.discount)) / 100
-    : Number(props.product.price);
+  const finalPrice = Number(props.product.price);
   const message = `Hola, deseo comprar ${props.product.title}. Color: ${selectedColor.value}. Talla: ${selectedSize.value}. Cantidad: ${cartStore.orderQuantity}. Precio: S/ ${finalPrice.toFixed(2)}.`;
 
   return `https://api.whatsapp.com/send?phone=51947724459&text=${encodeURIComponent(message)}`;

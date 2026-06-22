@@ -27,7 +27,6 @@ export interface ShoeProduct {
   category: ShoeCategory;
   gender: ShoeGender;
   price: number;
-  previousPrice?: number;
   discount: number;
   quantity: number;
   colors: ShoeColor[];
@@ -85,7 +84,6 @@ export const shoes_data: ShoeProduct[] = [
     category: "Training",
     gender: "Unisex",
     price: 320,
-    previousPrice: 350,
     discount: 0,
     quantity: 40,
     colors: [
@@ -245,13 +243,7 @@ export const shoes_data: ShoeProduct[] = [
   },
 ];
 
-const toLegacyProduct = (shoe: ShoeProduct): IProduct => {
-  const legacyPrice = shoe.previousPrice ?? shoe.price;
-  const legacyDiscount = shoe.previousPrice
-    ? ((shoe.previousPrice - shoe.price) / shoe.previousPrice) * 100
-    : shoe.discount;
-
-  return {
+const toLegacyProduct = (shoe: ShoeProduct): IProduct => ({
   id: shoe.id,
   sku: shoe.sku,
   img: shoe.images[0]?.src ?? "",
@@ -272,8 +264,8 @@ const toLegacyProduct = (shoe: ShoeProduct): IProduct => {
   }),
   parent: shoe.category,
   children: shoe.gender,
-  price: legacyPrice,
-  discount: legacyDiscount,
+  price: shoe.price,
+  discount: shoe.discount,
   quantity: shoe.quantity,
   brand: {
     name: shoe.brand,
@@ -306,14 +298,6 @@ const toLegacyProduct = (shoe: ShoeProduct): IProduct => {
       key: "Precio actual",
       value: `${shoe.price}`,
     },
-    ...(shoe.previousPrice
-      ? [
-          {
-            key: "Precio anterior",
-            value: `${shoe.previousPrice}`,
-          },
-        ]
-      : []),
     {
       key: "Stock por talla",
       value: shoe.sizes.map((item) => `${item.size}: ${item.stock}`).join(", "),
@@ -323,8 +307,7 @@ const toLegacyProduct = (shoe: ShoeProduct): IProduct => {
   sellCount: shoe.featured ? 8 : 3,
   tags: shoe.tags,
   sizes: shoe.sizes.map((item) => item.size),
-  };
-};
+});
 
 const product_data: IProduct[] = shoes_data.map(toLegacyProduct);
 
