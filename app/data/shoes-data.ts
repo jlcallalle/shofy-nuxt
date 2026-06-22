@@ -173,16 +173,16 @@ export const shoes_data: ShoeProduct[] = [
     discount: 0,
     quantity: 40,
     colors: [
-      { name: "Blanco", code: "#F7F4EF" },
       { name: "Negro", code: "#111827" },
+      { name: "Blanco", code: "#F7F4EF" },
       { name: "Blanco/Negro", code: "#D1D5DB" },
     ],
     sizes: allSizes,
-    images: placeholderImages("SKULL", [
-      { name: "Blanco", code: "#F7F4EF" },
-      { name: "Negro", code: "#111827" },
-      { name: "Blanco/Negro", code: "#D1D5DB" },
-    ]),
+    images: [
+      { color: "Negro", src: "/img/producto/tenis-skull-negro.png" },
+      { color: "Blanco", src: "/img/producto/tenis-skull-blanco.png" },
+      { color: "Blanco/Negro", src: "/img/producto/tenis-skull-blanco-negro.png" },
+    ],
     featured: false,
     description:
       "Modelo urbano con caracter deportivo, pensado para combinar estilo casual con comodidad de entrenamiento.",
