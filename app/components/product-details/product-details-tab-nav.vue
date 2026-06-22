@@ -6,7 +6,6 @@
 
         <button @click="handleActiveMarker($event)" class="nav-link active" id="nav-addInfo-tab" data-bs-toggle="tab" data-bs-target="#nav-addInfo" type="button" role="tab" aria-controls="nav-addInfo" aria-selected="false">Informacion</button>
 
-        <button @click="handleActiveMarker($event)" class="nav-link" id="nav-review-tab" data-bs-toggle="tab" data-bs-target="#nav-review" type="button" role="tab" aria-controls="nav-review" aria-selected="false">Resenas ({{product.reviews?.length}})</button>
         <span id="productTabMarker" class="tp-product-details-tab-line"></span>
       </div>
     </nav>  
@@ -42,83 +41,6 @@
                         </tr>
                       </tbody>
                   </table>
-                </div>
-            </div>
-          </div>
-      </div>
-      <div class="tab-pane fade" id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab" tabindex="0">
-          <div class="tp-product-details-review-wrapper pt-60">
-            <div class="row">
-                <div class="col-lg-6">
-                  <div class="tp-product-details-review-statics">
-                      <!-- number -->
-                      <div class="tp-product-details-review-number d-inline-block mb-50">
-                        <h3 class="tp-product-details-review-number-title">Resenas de clientes</h3>
-                        <div class="tp-product-details-review-summery d-flex align-items-center">
-                            <div class="tp-product-details-review-summery-value">
-                              <span>4.5</span>
-                            </div>
-                            <div class="tp-product-details-review-summery-rating d-flex align-items-center">
-                              <span><i class="fa-solid fa-star"></i></span>
-                              <span><i class="fa-solid fa-star"></i></span>
-                              <span><i class="fa-solid fa-star"></i></span>
-                              <span><i class="fa-solid fa-star"></i></span>
-                              <span><i class="fa-solid fa-star"></i></span>
-                              <p>({{product.reviews?.length}} resenas)</p>
-                            </div>
-                        </div>
-                        <div class="tp-product-details-review-rating-list">
-                            <!-- rating item -->
-                            <product-details-rating-item :star="5" width="82" /> 
-                            <product-details-rating-item :star="4" width="30" /> 
-                            <product-details-rating-item :star="3" width="15" /> 
-                            <product-details-rating-item :star="2" width="6" /> 
-                            <product-details-rating-item :star="1" width="10" /> 
-                            <!-- end rating item -->
-                        </div>
-                      </div>
-
-                      <!-- reviews -->
-                      <div class="tp-product-details-review-list pr-110">
-                        <h3 class="tp-product-details-review-title">Calificacion y resenas</h3>
-                        <div v-if="product.reviews && product.reviews.length > 0">
-                          <div v-for="(item,i) in product.reviews" :key="i" class="tp-product-details-review-avater d-flex align-items-start">
-                              <div class="tp-product-details-review-avater-thumb">
-                                <a href="#">
-                                    <img :src="item.user" alt="user">
-                                </a>
-                              </div>
-                              <div class="tp-product-details-review-avater-content">
-                                <div class="tp-product-details-review-avater-rating d-flex align-items-center">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                </div>
-                                <h3 class="tp-product-details-review-avater-title">{{item.name}}</h3>
-                                <span class="tp-product-details-review-avater-meta">{{item.date}} </span>
-  
-                                <div class="tp-product-details-review-avater-comment">
-                                    <p>{{item.review}}</p>
-                                </div>
-                              </div>
-                          </div>
-                        </div>
-                        <div v-else>
-                          <h5>No hay resenas</h5>
-                        </div>
-                      </div>
-                  </div>
-                </div> <!-- end col -->
-                <div class="col-lg-6">
-                  <div class="tp-product-details-review-form">
-                      <h3 class="tp-product-details-review-form-title">Resena este producto</h3>
-                      <p>Tu correo no sera publicado. Los campos requeridos estan marcados con *</p>
-                     <!-- form start -->
-                     <forms-review-form/>
-                     <!-- form end -->
-                  </div>
                 </div>
             </div>
           </div>

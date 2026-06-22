@@ -6,7 +6,7 @@
           <div class="breadcrumb__content p-relative z-index-1">
             <h3 class="breadcrumb__title">{{title}}</h3>
             <div class="breadcrumb__list">
-              <span><nuxt-link href="/">Home</nuxt-link></span>
+              <span><nuxt-link href="/">Inicio</nuxt-link></span>
               <span>{{subtitle}}</span>
             </div>
           </div>

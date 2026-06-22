@@ -6,7 +6,7 @@
           <div class="tp-trending-wrapper">
             <div class="tp-section-title-wrapper-2 mb-50">
               <span class="tp-section-title-pre-2">
-                More to Discover
+                Más por descubrir
                 <svg-section-line-2 />
               </span>
               <h3 class="tp-section-title-2">Novedades</h3>
@@ -54,19 +54,19 @@
           <div class="tp-trending-banner p-relative ml-35">
             <div
               class="tp-trending-banner-thumb w-img include-bg"
-              style="background-image: url(/img/product/trending/banner/trending-banner.jpg)"
+              style="background-image: url(/img/producto/tenis-show-divas.jpg)"
             ></div>
             <div class="tp-trending-banner-content">
               <h3 class="tp-trending-banner-title">
-                <nuxt-link href="/productos">
-                  Short Sleeve Tunic <br />Tops Casual Swing
+                <nuxt-link href="/producto/divas">
+                  Tenis DIVAS <br />color caramelo
                 </nuxt-link>
               </h3>
               <div class="tp-trending-banner-btn">
-                <nuxt-link href="/productos"
+                <nuxt-link href="/producto/divas"
                   class="tp-btn tp-btn-border tp-btn-border-white tp-btn-border-white-sm"
                 >
-                  Explore More
+                  Ver producto
                   <svg-right-arrow />
                 </nuxt-link>
               </div>

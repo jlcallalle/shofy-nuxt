@@ -6,7 +6,7 @@
           :class="`has-dropdown has-mega-menu ${isActiveMenu === menu.title?'dropdown-opened':''}`"
         >
           <a :class="`${isActiveMenu === menu.title?'expanded':''}`">
-            Home
+            Inicio
             <button
               @click="handleOpenSubMenu(menu.title)"
               :class="`dropdown-toggle-btn ${isActiveMenu === menu.title?'dropdown-opened':''}`"

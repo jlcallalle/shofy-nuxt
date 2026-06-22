@@ -8,7 +8,7 @@
       <div class="cartmini__top-wrapper">
         <div class="cartmini__top p-relative">
           <div class="cartmini__top-title">
-            <h4>Shopping cart</h4>
+            <h4>Carrito de compras</h4>
           </div>
           <div class="cartmini__close">
             <button
@@ -69,7 +69,7 @@
             src="/img/product/cartmini/empty-cart.png"
             alt="empty-cart-img"
           />
-          <p>Your Cart is empty</p>
+          <p>Tu carrito está vacío</p>
           <nuxt-link href="/productos" class="tp-btn">Ir a productos</nuxt-link>
         </div>
       </div>
@@ -84,14 +84,14 @@
             @click="cartStore.handleCartOffcanvas"
             class="tp-btn mb-10 w-100"
           >
-            view cart
+            Ver carrito
           </nuxt-link>
           <nuxt-link
             href="/checkout"
             @click="cartStore.handleCartOffcanvas"
             class="tp-btn tp-btn-border w-100"
           >
-            checkout
+            Finalizar compra
           </nuxt-link>
         </div>
       </div>

@@ -2,8 +2,8 @@
   <section class="tp-cart-area pb-120">
     <div class="container">
       <div v-if="cartStore.cart_products.length === 0" className='text-center pt-50'>
-        <h3>No Cart Items Found</h3>
-        <nuxt-link href="/productos" className="tp-cart-checkout-btn mt-20">Continue Shipping</nuxt-link>
+        <h3>No hay productos en el carrito</h3>
+        <nuxt-link href="/productos" className="tp-cart-checkout-btn mt-20">Continuar comprando</nuxt-link>
       </div>
       <div v-else class="row">
         <div class="col-xl-9 col-lg-8">
@@ -11,9 +11,9 @@
               <table>
                   <thead>
                     <tr>
-                      <th colspan="2" class="tp-cart-header-product">Product</th>
-                      <th class="tp-cart-header-price">Price</th>
-                      <th class="tp-cart-header-quantity">Quantity</th>
+                      <th colspan="2" class="tp-cart-header-product">Producto</th>
+                      <th class="tp-cart-header-price">Precio</th>
+                      <th class="tp-cart-header-quantity">Cantidad</th>
                       <th></th>
                     </tr>
                   </thead>
@@ -30,10 +30,10 @@
                     <div class="tp-cart-coupon">
                         <form @submit.prevent="handleCouponSubmit">
                           <div class="tp-cart-coupon-input-box">
-                              <label>Coupon Code:</label>
+                              <label>Código de cupón:</label>
                               <div class="tp-cart-coupon-input d-flex align-items-center">
-                                <input type="text" placeholder="Enter Coupon Code" v-model="couponCode">
-                                <button type="submit">Apply</button>
+                                <input type="text" placeholder="Ingresa el código de cupón" v-model="couponCode">
+                                <button type="submit">Aplicar</button>
                               </div>
                           </div>
                         </form>
@@ -41,7 +41,7 @@
                   </div>
                   <div class="col-xl-6 col-md-4">
                     <div class="tp-cart-update text-md-end">
-                        <button @click="cartStore.clear_cart()" type="button" class="tp-cart-update-btn">Clear Cart</button>
+                        <button @click="cartStore.clear_cart()" type="button" class="tp-cart-update-btn">Vaciar carrito</button>
                     </div>
                   </div>
               </div>
@@ -56,19 +56,19 @@
                   </span>
               </div>
               <div class="tp-cart-checkout-shipping">
-                  <h4 class="tp-cart-checkout-shipping-title">Shipping</h4>
+                  <h4 class="tp-cart-checkout-shipping-title">Envío</h4>
                   <div class="tp-cart-checkout-shipping-option-wrapper">
                     <div class="tp-cart-checkout-shipping-option">
                         <input id="flat_rate" type="radio" name="shipping">
-                        <label @click="handleShippingCost(20)" for="flat_rate">Flat rate: <span>{{ formatPrice(20) }}</span></label>
+                        <label @click="handleShippingCost(20)" for="flat_rate">Tarifa fija: <span>{{ formatPrice(20) }}</span></label>
                     </div>
                     <div class="tp-cart-checkout-shipping-option">
                         <input id="local_pickup" type="radio" name="shipping">
-                        <label @click="handleShippingCost(25)" for="local_pickup">Local pickup: <span> {{ formatPrice(25) }}</span></label>
+                        <label @click="handleShippingCost(25)" for="local_pickup">Recojo en tienda: <span> {{ formatPrice(25) }}</span></label>
                     </div>
                     <div class="tp-cart-checkout-shipping-option">
                         <input id="free_shipping" type="radio" name="shipping">
-                        <label @click="handleShippingCost('free')" for="free_shipping">Free shipping</label>
+                        <label @click="handleShippingCost('free')" for="free_shipping">Envío gratis</label>
                     </div>
                   </div>
               </div>
@@ -77,7 +77,7 @@
                   <span>{{formatPrice(cartStore.totalPriceQuantity.total + shipCost)}}</span>
               </div>
               <div class="tp-cart-checkout-proceed">
-                  <nuxt-link href="/checkout" class="tp-cart-checkout-btn w-100">Proceed to Checkout</nuxt-link>
+                  <nuxt-link href="/checkout" class="tp-cart-checkout-btn w-100">Finalizar compra</nuxt-link>
               </div>
             </div>
         </div>

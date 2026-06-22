@@ -3,9 +3,9 @@
     <div class="tp-shop-widget-checkbox">
       <ul class="filter-items filter-checkbox">
         <li v-for="(s, i) in status" :key="i" class="filter-item checkbox">
-          <input id="on-sale" type="checkbox" name="on-sale" />
-          <label @click="handleStatus(s)" :for="s" :class="`${route.query?.status === formatString(s) ? 'active': ''}`"> 
-            {{ s }} 
+          <input :id="s.value" type="checkbox" name="status" />
+          <label @click="handleStatus(s.value)" :for="s.value" :class="`${route.query?.status === s.value ? 'active': ''}`">
+            {{ s.label }}
           </label>
         </li>
       </ul>
@@ -14,10 +14,12 @@
 </template>
 
 <script setup lang="ts">
-import { formatString } from "@/utils/index";
 const route = useRoute();
 const router = useRouter();
-const status = ref<string[]>(["On sale", "In Stock"]);
+const status = ref([
+  { label: "En oferta", value: "on-sale" },
+  { label: "En stock", value: "in-stock" },
+]);
 
 function handleStatus(status: string) {
   router.push({
@@ -29,8 +31,8 @@ function handleStatus(status: string) {
             .split(",")
             .filter((item: string) => item !== status)
             .join(",")
-          : formatString(status)
-        : formatString(status)
+          : status
+        : status
     }
   });
 }

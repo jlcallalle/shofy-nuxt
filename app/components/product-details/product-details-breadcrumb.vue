@@ -8,9 +8,8 @@
                     <span class="breadcrumb-icon me-1">
                       <svg-dot/>
                     </span>
-                    <span><a href="#">Home</a></span>
-                    <span><a href="#">{{product.parent}}</a></span>
-                    <span><a href="#">{{product.children}}</a></span>
+                    <span><nuxt-link href="/">Home</nuxt-link></span>
+                    <span><nuxt-link href="/productos">Productos</nuxt-link></span>
                     <span>{{product.title}}</span>
                 </div>
               </div>

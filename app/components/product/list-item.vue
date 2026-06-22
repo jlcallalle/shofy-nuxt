@@ -16,7 +16,7 @@
             @click="utilityStore.handleOpenModal(`product-modal-${item.slug || item.id}`,item)"
           >
             <svg-quick-view />
-            <span class="tp-product-tooltip tp-product-tooltip-right">Quick View</span>
+            <span class="tp-product-tooltip tp-product-tooltip-right">Vista rápida</span>
           </button>
           
           <button
@@ -26,7 +26,7 @@
           >
             <svg-wishlist />
             <span class="tp-product-tooltip tp-product-tooltip-right">
-              {{isItemInWishlist(item) ? 'Remove From Wishlist' : 'Add To Wishlist'}}
+              {{isItemInWishlist(item) ? 'Quitar de favoritos' : 'Agregar a favoritos'}}
             </span>
           </button>
 
@@ -37,7 +37,7 @@
           >
             <svg-compare-2 />
             <span class="tp-product-tooltip tp-product-tooltip-right">
-              {{ isItemInCompare(item) ? 'Remove From Compare' : 'Add To Compare' }}
+              {{ isItemInCompare(item) ? 'Quitar de comparar' : 'Agregar a comparar' }}
             </span>
           </button>
         </div>
@@ -73,9 +73,9 @@
 
         <p>{{ item.description.slice(0, 100) }}</p>
         <div class="tp-product-list-add-to-cart">
-          <button v-if="!isItemInCart(item)" @click="cartStore.addCartProduct(item)" class="tp-product-list-add-to-cart-btn">Add To Cart</button>
+          <button v-if="!isItemInCart(item)" @click="cartStore.addCartProduct(item)" class="tp-product-list-add-to-cart-btn">Agregar al carrito</button>
           <nuxt-link to="/cart" v-if="isItemInCart(item)" class="tp-product-list-add-to-cart-btn">
-            View Cart
+            Ver carrito
           </nuxt-link>
         </div>
       </div>

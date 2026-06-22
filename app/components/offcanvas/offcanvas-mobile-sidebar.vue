@@ -59,17 +59,16 @@
               @click="handleToggleActive('currency')"
               class="offcanvas__currency-selected-currency tp-currency-toggle"
               id="tp-offcanvas-currency-toggle"
-              >Currency : USD
+              >Moneda: PEN
             </span>
             <ul
               :class="`offcanvas__currency-list tp-currency-list ${
                 isToggleActive === 'currency' ? 'tp-currency-list-open' : ''
               }`"
             >
+              <li>PEN</li>
               <li>USD</li>
-              <li>ERU</li>
-              <li>BDT</li>
-              <li>INR</li>
+              <li>EUR</li>
             </ul>
           </div>
           <div class="offcanvas__select language">
@@ -84,17 +83,16 @@
                   @click="handleToggleActive('lang')"
                   class="offcanvas__lang-selected-lang tp-lang-toggle"
                   id="tp-offcanvas-lang-toggle"
-                  >English
+                  >Español
                 </span>
                 <ul
                   :class="`offcanvas__lang-list tp-lang-list ${
                     isToggleActive === 'lang' ? 'tp-lang-list-open' : ''
                   }`"
                 >
-                  <li>Spanish</li>
-                  <li>Portugese</li>
-                  <li>American</li>
-                  <li>Canada</li>
+                  <li>Español</li>
+                  <li>Portugués</li>
+                  <li>Inglés</li>
                 </ul>
               </div>
             </div>

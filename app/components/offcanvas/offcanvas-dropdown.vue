@@ -8,7 +8,7 @@
       <div class="col-lg-3">
         <!-- status -->
         <div class="tp-shop-widget mb-50">
-          <h3 class="tp-shop-widget-title">Product Status</h3>
+          <h3 class="tp-shop-widget-title">Estado del producto</h3>
           <shop-sidebar-filter-status />
         </div>
       </div>
@@ -16,7 +16,7 @@
       <div class="col-lg-3">
         <!-- categories -->
         <div class="tp-shop-widget mb-50">
-          <h3 class="tp-shop-widget-title">Categories</h3>
+          <h3 class="tp-shop-widget-title">Categorías</h3>
           <shop-sidebar-filter-categories />
         </div>
       </div>
@@ -24,7 +24,7 @@
       <div class="col-lg-3">
         <!-- color -->
         <div class="tp-shop-widget mb-50">
-          <h3 class="tp-shop-widget-title">Filter by Price</h3>
+          <h3 class="tp-shop-widget-title">Filtrar por precio</h3>
           <shop-sidebar-price-filter />
         </div>
         <shop-sidebar-reset-filter />
@@ -33,7 +33,7 @@
       <div class="col-lg-3">
         <!-- product rating -->
         <div class="tp-shop-widget mb-50">
-          <h3 class="tp-shop-widget-title">Top Rated Products</h3>
+          <h3 class="tp-shop-widget-title">Productos mejor valorados</h3>
           <shop-sidebar-top-product />
         </div>
       </div>

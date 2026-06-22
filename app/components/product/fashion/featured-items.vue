@@ -5,7 +5,7 @@
         <div class="col-xl-12">
           <div class="tp-section-title-wrapper-2 mb-50">
             <span class="tp-section-title-pre-2">
-              Shop by Category
+              Compra por modelo
               <svg-section-line-2 />
             </span>
             <h3 class="tp-section-title-2">Destacado de esta semana</h3>
@@ -73,7 +73,7 @@
                   </div>
                   <div class="tp-featured-btn">
                     <nuxt-link :href="`/producto/${item.slug || item.id}`" class="tp-btn tp-btn-border tp-btn-border-sm">
-                      Shop Now <svg-right-arrow />
+                      Comprar ahora <svg-right-arrow />
                     </nuxt-link>
                   </div>
                 </div>

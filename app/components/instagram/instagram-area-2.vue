@@ -18,7 +18,7 @@
               </a>
             </div>
             <div class="tp-instagram-banner-content">
-              <span>Follow Us on</span>
+              <span>Síguenos en</span>
               <a href="#">Instagram</a>
             </div>
           </div>

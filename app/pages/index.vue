@@ -53,5 +53,5 @@
 definePageMeta({
   layout: false,
 });
-useSeoMeta({ title: "Home two" });
+useSeoMeta({ title: "Inicio" });
 </script>
