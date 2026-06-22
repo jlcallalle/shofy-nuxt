@@ -23,7 +23,7 @@
           </div>
       </div>
     </div>
-    <p>{{ textMore ? product.description : `${product.description.substring(0, 100)}...` }} <span @click="textMore = !textMore">{{textMore ? 'See less' : 'See more'}}</span></p>
+    <p>{{ textMore ? product.description : `${product.description.substring(0, 100)}...` }} <span @click="textMore = !textMore">{{textMore ? 'Ver menos' : 'Ver más'}}</span></p>
 
     <!-- price -->
     <div class="tp-product-details-price-wrapper mb-20">

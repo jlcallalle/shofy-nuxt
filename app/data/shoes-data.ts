@@ -232,11 +232,11 @@ export const shoes_data: ShoeProduct[] = [
       { name: "Chocolate", code: "#4E2A1E" },
     ],
     sizes: allSizes,
-    images: placeholderImages("DIVAS", [
-      { name: "Rosa", code: "#F3A6B8" },
-      { name: "Marron", code: "#8B5A2B" },
-      { name: "Chocolate", code: "#4E2A1E" },
-    ]),
+    images: [
+      { color: "Rosa", src: "/img/producto/tenis-dibas-rosado.png" },
+      { color: "Marron", src: "/img/producto/tenis-dibas-caramelo.png" },
+      { color: "Chocolate", src: "/img/producto/tenis-dibas-chocolate.png" },
+    ],
     featured: false,
     description:
       "Zapatilla casual deportiva con look moderno, creada para acompanarte del entrenamiento al dia a dia.",
