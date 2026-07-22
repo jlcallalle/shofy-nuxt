@@ -1,5 +1,5 @@
 <template>
-  <section class="tp-trending-area pt-140 pb-150 d-none">
+  <section class="tp-trending-area pt-140 pb-150">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-6">

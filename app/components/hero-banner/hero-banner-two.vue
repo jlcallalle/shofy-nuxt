@@ -81,28 +81,22 @@ type ISliderData = {
 const slider_data: ISliderData[] = [
   {
     id: 1,
-    subtitle: "Boot Training Peru",
-    title: "Zapatillas para entrenar",
-    img: "/img/slider/2/slider-1a.png",
-  },
-  {
-    id: 2,
     subtitle: "Nuevos modelos",
-    title: "Training, Running y Casual",
+    title: "Zapatillas para entrenar",
     img: "/img/slider/2/slider-2a.png",
   },
   {
-    id: 3,
+    id: 2,
     subtitle: "Hechas para moverte",
     title: "BOOT B, BOOT Z y mas",
     img: "/img/slider/2/slider-4.png",
   },
   {
-    id: 4,
+    id: 3,
     subtitle: "Boot Training Peru",
-    title: "Zapatillas con actitud",
-    img: "/img/slider/2/slider-5.png",
-  },
+    title: "Zapatillas para entrenar",
+    img: "/img/slider/2/slider-1a.png",
+  }
 ];
 
 /* const slider_data: ISliderData[] = [
