@@ -81,7 +81,7 @@ type ISliderData = {
 const slider_data: ISliderData[] = [
   {
     id: 1,
-    subtitle: "Nuevos modelos",
+    subtitle: "Modelo BOOT Z - Color",
     title: "Zapatillas para entrenar",
     img: "/img/slider/2/slider-2a.png",
   },
