@@ -9,7 +9,6 @@
               <svg-section-line-2 />
             </span>
             <h3 class="tp-section-title-2">Destacado de esta semana</h3>
-            <p>{{fashion_prd.length }}</p>
           </div>
         </div>
       </div>
@@ -99,8 +98,28 @@
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Navigation } from "swiper/modules";
 import product_data from "@/data/shoes-data";
+import { type IProduct } from "@/types/product-type";
 
-const fashion_prd = product_data
-  .filter((p) => p.productType === "fashion")
-  .filter((p) => p.featured);
+const weeklyFeatured = [
+  { id: "divas", color: "Rosa", title: "DIVAS Rosa" },
+  { id: "skull", color: "Blanco", title: "SKULL Blanca" },
+  { id: "iron", color: "Azul", title: "IRON Color" },
+];
+
+const fashion_prd = weeklyFeatured
+  .map(({ id, color, title }) => {
+    const product = product_data.find((item) => item.id === id);
+    const colorImage = product?.imageURLs.find(
+      (image) => image.color?.name === color
+    );
+
+    return product
+      ? ({
+          ...product,
+          title,
+          img: colorImage?.img ?? product.img,
+        } satisfies IProduct)
+      : undefined;
+  })
+  .filter((product): product is IProduct => Boolean(product));
 </script>
