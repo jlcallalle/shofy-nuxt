@@ -199,14 +199,12 @@ export const shoes_data: ShoeProduct[] = [
     discount: 0,
     quantity: 40,
     colors: [
-      { name: "Blanco", code: "#F7F4EF" },
-      { name: "Color", code: "#D9A441" },
+      { name: "Azul", code: "#4165d9" },
     ],
     sizes: allSizes,
-    images: placeholderImages("IRON", [
-      { name: "Blanco", code: "#F7F4EF" },
-      { name: "Color", code: "#D9A441" },
-    ]),
+    images: [
+      { color: "Azul", src: "/img/producto/tenis-iron-azul.png" },
+    ],
     featured: true,
     description:
       "Zapatilla robusta para entrenamiento de fuerza, estabilidad y soporte en movimientos explosivos.",
@@ -225,14 +223,14 @@ export const shoes_data: ShoeProduct[] = [
     discount: 0,
     quantity: 40,
     colors: [
-      { name: "Rosa", code: "#F3A6B8" },
       { name: "Marron", code: "#8B5A2B" },
+      { name: "Rosa", code: "#F3A6B8" },
       { name: "Chocolate", code: "#4E2A1E" },
     ],
     sizes: allSizes,
     images: [
-      { color: "Rosa", src: "/img/producto/tenis-dibas-rosado.png" },
       { color: "Marron", src: "/img/producto/tenis-dibas-caramelo.png" },
+      { color: "Rosa", src: "/img/producto/tenis-dibas-rosado.png" },
       { color: "Chocolate", src: "/img/producto/tenis-dibas-chocolate.png" },
     ],
     featured: false,
