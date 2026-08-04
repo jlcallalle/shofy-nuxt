@@ -13,25 +13,6 @@
       <product-fashion-popular-items/>
       <!-- popular product items end -->
 
-      <!-- all products start -->
-      <product-fashion-all-products/>
-      <!-- all products end -->
-
-      <!-- featured products start -->
-      <product-fashion-featured-items/>
-      <!-- featured products end -->
-
-      <!-- trending products start -->
-      <product-fashion-trending-products/>
-      <!-- trending products end -->
-
-      <!-- best-sell products start -->
-      <!-- best-sell products end -->
-
-      <!-- testimonial start -->
-      <testimonial-fashion/>
-      <!-- testimonial end -->
-
       <!-- blog start -->
       <blog-fashion-items/>
       <!-- blog end -->

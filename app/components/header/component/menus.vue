@@ -10,7 +10,7 @@
 const menuItems = [
   { title: "Inicio", link: "/" },
   { title: "Productos", link: "/productos" },
-  { title: "Blog", link: "/blog" },
+  /* { title: "Blog", link: "/blog" }, */
   { title: "Contacto", link: "/contacto" },
 ];
 </script>

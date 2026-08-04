@@ -8,7 +8,7 @@
               <span class="tp-testimonial-shape-gradient"></span>
             </div>
             <h3 class="tp-testimonial-section-title text-center">
-              Opiniones de nuestros clientes
+              Opiniones de nuestros clientes 123
             </h3>
             <div class="row justify-content-center">
               <div class="col-xl-8 col-lg-8 col-md-10">
