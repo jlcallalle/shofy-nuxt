@@ -87,15 +87,15 @@ export const shoes_data: ShoeProduct[] = [
     discount: 0,
     quantity: 40,
     colors: [
-      { name: "Blanco", code: "#F7F4EF" },
-      { name: "Azul", code: "#1F5FAE" },
       { name: "Rosa", code: "#F3A6B8" },
+      { name: "Azul", code: "#1F5FAE" },
+      { name: "Blanco", code: "#F7F4EF" },
     ],
     sizes: allSizes,
     images: [
+      { color: "Rosa", src: "/img/producto/tenis-bootb-rosado.png" },
+      { color: "Azul", src: "/img/producto/tenis-bootb-azul.png" },
       { color: "Blanco", src: "/img/producto/tenis-bootb-blanco.png" },
-      { color: "Azul", src: "/img/producto/tenis-bootb_azul.png" },
-      { color: "Rosa", src: "/img/producto/tenis-bootb_rosado.png" },
     ],
     featured: true,
     description:
@@ -115,15 +115,17 @@ export const shoes_data: ShoeProduct[] = [
     discount: 0,
     quantity: 40,
     colors: [
-      { name: "Blanco", code: "#F7F4EF" },
       { name: "Nude", code: "#D8B69A" },
+      { name: "Blanco", code: "#F7F4EF" },
       { name: "Negro", code: "#111827" },
+      { name: "Color", code: "#1b49ac" },
     ],
     sizes: allSizes,
     images: [
-      { color: "Blanco", src: "/img/producto/tenis-bootz-blanco.png" },
       { color: "Nude", src: "/img/producto/tenis-bootz-nude.png" },
+      { color: "Blanco", src: "/img/producto/tenis-bootz-blanco.png" },
       { color: "Negro", src: "/img/producto/tenis-bootz-negro.png" },
+      { color: "Color", src: "/img/producto/tenis-bootz-color.png" },
     ],
     featured: true,
     description:
