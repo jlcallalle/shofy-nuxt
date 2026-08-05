@@ -15,7 +15,7 @@
       <!-- filter status end -->
     </div>
     <!-- categories -->
-    <div class="tp-shop-widget mb-50">
+    <div v-if="!hideCategories" class="tp-shop-widget mb-50">
       <h3 class="tp-shop-widget-title">Categorías</h3>
       <!-- filter categories start -->
       <shop-sidebar-filter-categories/>
@@ -28,5 +28,12 @@
 </template>
 
 <script setup lang="ts">
-
+withDefaults(
+  defineProps<{
+    hideCategories?: boolean;
+  }>(),
+  {
+    hideCategories: false,
+  }
+);
 </script>

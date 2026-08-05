@@ -8,7 +8,7 @@
       <div class="row">
         <div v-if="!shop_right_side && !shop_no_side" class="col-xl-3 col-lg-4">
           <!-- shop sidebar start -->
-          <shop-sidebar />
+          <shop-sidebar :hide-categories="hideCategories" />
           <!-- shop sidebar end -->
         </div>
         <div :class="`${shop_no_side?'col-xl-12':'col-xl-9 col-lg-8'}`">
@@ -103,7 +103,7 @@
 
         <div v-if="shop_right_side && !shop_no_side" class="col-xl-3 col-lg-4">
           <!-- shop sidebar start -->
-          <shop-sidebar />
+          <shop-sidebar :hide-categories="hideCategories" />
           <!-- shop sidebar end -->
         </div>
 
@@ -123,6 +123,7 @@ const props = defineProps<{
   shop_1600?: boolean;
   shop_right_side?: boolean;
   shop_no_side?: boolean;
+  hideCategories?: boolean;
 }>();
 
 const active_tab = ref<string>(props.list_style ? "list" : "grid");

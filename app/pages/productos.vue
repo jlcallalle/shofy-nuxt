@@ -5,7 +5,7 @@
       <!-- breadcrumb end -->
 
       <!-- productos area start -->
-      <productos-area/>
+      <productos-area :hide-categories="true"/>
       <!-- productos area end -->
   </div>
 </template>
