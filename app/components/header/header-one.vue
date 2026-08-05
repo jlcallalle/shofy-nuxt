@@ -143,7 +143,7 @@
   <!-- cart offcanvas end -->
 
   <!-- cart offcanvas start -->
-  <offcanvas-mobile-sidebar product-type="electronics"/>
+  <offcanvas-mobile-sidebar/>
   <!-- cart offcanvas end -->
 </template>
 

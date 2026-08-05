@@ -63,7 +63,7 @@
   <!-- cart offcanvas end -->
 
   <!-- cart offcanvas start -->
-  <offcanvas-mobile-sidebar product-type="beauty"/>
+  <offcanvas-mobile-sidebar/>
   <!-- cart offcanvas end -->
 </template>
 

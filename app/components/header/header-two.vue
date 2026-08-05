@@ -57,6 +57,16 @@
                         <svg-menu-icon />
                       </button>
                     </div> -->
+                    <div class="tp-header-action-item tp-header-hamburger d-xl-none">
+                      <button
+                        @click="utilsStore.handleOpenMobileMenu()"
+                        type="button"
+                        class="tp-offcanvas-open-btn"
+                        aria-label="Abrir menu"
+                      >
+                        <svg-menu-icon />
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -72,19 +82,16 @@
    <!-- cart offcanvas end -->
 
   <!-- cart offcanvas start -->
-  <offcanvas-mobile-sidebar product-type="fashion"/>
+  <offcanvas-mobile-sidebar/>
   <!-- cart offcanvas end -->
 </template>
 
 <script setup lang="ts">
-const router = useRouter();
-const {isSticky} = useSticky();
-import { useCartStore } from '@/pinia/useCartStore';
-import { useWishlistStore } from '@/pinia/useWishlistStore';
 import { useUtilityStore } from '@/pinia/useUtilityStore';
 
-const cartStore = useCartStore();
-const wishlistStore = useWishlistStore();
+const router = useRouter();
+const {isSticky} = useSticky();
+
 const utilsStore = useUtilityStore();
 
 defineProps<{style_2?:boolean}>()

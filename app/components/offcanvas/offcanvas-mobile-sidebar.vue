@@ -19,13 +19,10 @@
         >
           <div class="offcanvas__logo logo">
             <nuxt-link href="/">
-              <img src="/img/logo/logo.svg" alt="logo" />
+              <img src="/img/logo/logo_peru.jpeg" width="150" height="50" alt="Boot Training Peru" />
             </nuxt-link>
           </div>
         </div>
-        <!-- mobile category start -->
-        <header-component-mobile-categories :product-type="productType" />
-        <!-- mobile category end -->
         <div class="tp-main-menu-mobile fix d-lg-none mb-40">
           <!-- mobile menus start -->
           <header-component-mobile-menus />
@@ -43,11 +40,6 @@
               <a href="tel:098-852-987">004524865</a>
             </h3>
           </div>
-        </div>
-        <div class="offcanvas__btn">
-          <nuxt-link href="/contacto" class="tp-btn-2 tp-btn-border-2"
-            >Contacto</nuxt-link
-          >
         </div>
       </div>
       <div class="offcanvas__bottom">
@@ -110,7 +102,6 @@
 
 <script setup lang="ts">
 import { useUtilityStore } from "@/pinia/useUtilityStore";
-const props = defineProps<{ productType: string }>();
 const utilsStore = useUtilityStore();
 
 let isToggleActive = ref<string>("");

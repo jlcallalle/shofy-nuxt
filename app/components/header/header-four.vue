@@ -63,7 +63,7 @@
   <!-- cart offcanvas end -->
 
   <!-- cart offcanvas start -->
-  <offcanvas-mobile-sidebar product-type="jewelry"/>
+  <offcanvas-mobile-sidebar/>
   <!-- cart offcanvas end -->
 </template>
 
