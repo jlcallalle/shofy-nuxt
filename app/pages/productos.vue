@@ -5,7 +5,11 @@
       <!-- breadcrumb end -->
 
       <!-- productos area start -->
-      <productos-area :hide-categories="true"/>
+      <productos-area
+        :hide-categories="true"
+        :hide-status="true"
+        :hide-offer-filter="true"
+      />
       <!-- productos area end -->
   </div>
 </template>

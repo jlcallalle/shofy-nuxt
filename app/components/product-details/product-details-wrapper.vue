@@ -8,7 +8,7 @@
     <!-- inventory details -->
     <div class="tp-product-details-inventory d-flex align-items-center mb-10">
       <div class="tp-product-details-stock mb-10">
-          <span>{{product.status}}</span>
+          <span>{{ productStatusLabel }}</span>
       </div>
       <div class="tp-product-details-rating-wrapper d-flex align-items-center mb-10">
           <div class="tp-product-details-rating">
@@ -17,9 +17,6 @@
             <span><i class="fa-solid fa-star"></i></span>
             <span><i class="fa-solid fa-star"></i></span>
             <span><i class="fa-solid fa-star"></i></span>
-          </div>
-          <div class="tp-product-details-reviews">
-            <span>({{product.reviews?.length}} resenas)</span>
           </div>
       </div>
     </div>
@@ -99,6 +96,15 @@
             </a>
           </div>
       </div>
+      <div class="tp-product-details-size-guide">
+        <button
+          type="button"
+          class="tp-product-details-size-guide-btn"
+          @click="isSizeGuideOpen = true"
+        >
+          Ver guia de tallas
+        </button>
+      </div>
       <!-- <nuxt-link :href="whatsappUrl" class="tp-product-details-buy-now-btn w-100 text-center">Comprar por WhatsApp</nuxt-link> -->
     </div>
     <!-- <div class="tp-product-details-action-sm">
@@ -149,6 +155,34 @@
     </div>
     </div>
 
+    <Teleport to="body">
+      <div
+        v-if="isSizeGuideOpen"
+        class="tp-size-guide-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="size-guide-title"
+        @click.self="isSizeGuideOpen = false"
+      >
+        <div class="tp-size-guide-modal-content">
+          <div class="tp-size-guide-modal-header">
+            <h5 id="size-guide-title">Guia de tallas</h5>
+            <button
+              type="button"
+              class="tp-size-guide-modal-close"
+              aria-label="Cerrar"
+              @click="isSizeGuideOpen = false"
+            >
+              <i class="fa-regular fa-xmark"></i>
+            </button>
+          </div>
+          <div class="tp-size-guide-modal-body">
+            <img src="/img/producto/tallas.jpg" alt="Guia de tallas Boot Training Peru">
+          </div>
+        </div>
+      </div>
+    </Teleport>
+
   </div>
 </template>
 
@@ -169,6 +203,7 @@ const props = withDefaults(defineProps<{product:IProduct;isShowBottom?:boolean}>
   isShowBottom:true,
 })
 let textMore = ref<boolean>(false)
+const isSizeGuideOpen = ref<boolean>(false);
 const defaultSizes = ["34", "35", "36", "37", "38", "39", "40"];
 const selectedSize = ref<string>(props.product.sizes?.[0] || defaultSizes[0]);
 
@@ -181,6 +216,13 @@ const selectedColor = computed(() => {
   const activeImage = props.product.imageURLs.find((item) => item.img === productStore.activeImg);
 
   return activeImage?.color?.name || props.product.imageURLs[0]?.color?.name || "No especificado";
+});
+
+const productStatusLabel = computed(() => {
+  if (props.product.status === "in-stock") return "En stock";
+  if (props.product.status === "out-of-stock") return "Sin stock";
+
+  return props.product.status;
 });
 
 watch(
@@ -225,6 +267,111 @@ const whatsappUrl = computed(() => {
 
 .tp-product-details-whatsapp-btn i {
   font-size: 16px;
+}
+
+.tp-product-details-size-guide {
+  width: 100%;
+  margin-top: -2px;
+}
+
+.tp-product-details-size-guide-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 1px solid #d9d9d9;
+  background-color: #ffffff;
+  color: #111111;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.tp-product-details-size-guide-btn:hover {
+  border-color: #118c4f;
+  color: #118c4f;
+}
+
+.tp-size-guide-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.tp-size-guide-modal-content {
+  width: min(780px, 100%);
+  max-height: calc(100vh - 48px);
+  overflow: auto;
+  background-color: #ffffff;
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.22);
+}
+
+.tp-size-guide-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 22px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.tp-size-guide-modal-header h5 {
+  margin: 0;
+  color: #010f1c;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.tp-size-guide-modal-close {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  color: #010f1c;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.tp-size-guide-modal-close:hover {
+  border-color: #118c4f;
+  color: #118c4f;
+}
+
+.tp-size-guide-modal-body {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.tp-size-guide-modal-body img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 575px) {
+  .tp-size-guide-modal {
+    padding: 14px;
+  }
+
+  .tp-size-guide-modal-content {
+    max-height: calc(100vh - 28px);
+  }
+
+  .tp-size-guide-modal-header {
+    padding: 14px 16px;
+  }
+
+  .tp-size-guide-modal-body {
+    padding: 12px;
+  }
 }
 
 .tp-product-details-size-list {

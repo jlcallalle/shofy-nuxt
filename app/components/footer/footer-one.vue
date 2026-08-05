@@ -29,7 +29,6 @@
                   <ul>
                     <li><nuxt-link href="/">Inicio</nuxt-link></li>
                     <li><nuxt-link href="/productos">Productos</nuxt-link></li>
-                    <li><nuxt-link href="/blog">Blog</nuxt-link></li>
                     <li><nuxt-link href="/contacto">Contacto</nuxt-link></li>
                   </ul>
                 </div>

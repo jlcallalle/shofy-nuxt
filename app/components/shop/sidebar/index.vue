@@ -8,7 +8,7 @@
       <!-- price filter end -->
     </div>
     <!-- status -->
-    <div class="tp-shop-widget mb-50">
+    <div v-if="!hideStatus" class="tp-shop-widget mb-50">
       <h3 class="tp-shop-widget-title">Estado del producto</h3>
       <!-- filter status start -->
       <shop-sidebar-filter-status/>
@@ -31,9 +31,11 @@
 withDefaults(
   defineProps<{
     hideCategories?: boolean;
+    hideStatus?: boolean;
   }>(),
   {
     hideCategories: false,
+    hideStatus: false,
   }
 );
 </script>

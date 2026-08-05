@@ -17,7 +17,7 @@
       <div class="tp-product-action-2 tp-product-action-blackStyle">
         <div class="tp-product-action-item-2 d-flex flex-column">
           <button
-            v-if="!isItemInCart(item)"
+            v-if="!hideAddCart && !isItemInCart(item)"
             @click="cartStore.addCartProduct(item)"
             type="button"
             :class="`tp-product-action-btn-2 tp-product-add-cart-btn ${isItemInCart(item)? 'active': ''}`"
@@ -121,9 +121,10 @@ function isItemInCart(product: IProduct) {
 }
 
 const props = withDefaults(
-  defineProps<{ item: IProduct; spacing?: boolean }>(),
+  defineProps<{ item: IProduct; spacing?: boolean; hideAddCart?: boolean }>(),
   {
     spacing: true,
+    hideAddCart: false,
   }
 );
 </script>

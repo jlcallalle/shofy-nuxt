@@ -13,7 +13,7 @@
           <!-- col end -->
           <div class="col-xl-5 col-lg-6">
             <!-- product details wrapper -->
-            <product-details-wrapper :product="product" />
+            <product-details-wrapper :product="product" :is-show-bottom="false" />
             <!-- product details wrapper -->
           </div>
         </div>

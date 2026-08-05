@@ -18,9 +18,9 @@
             <div
               v-for="item in allProducts"
               :key="item.id"
-              class="col-4 col-md-6 col-lg-4 col-xl-4"
+              class="col-6 col-md-4"
             >
-              <product-fashion-product-item :item="item" />
+              <product-fashion-product-item :item="item" :hide-add-cart="true" />
             </div>
           </div>
         </div>

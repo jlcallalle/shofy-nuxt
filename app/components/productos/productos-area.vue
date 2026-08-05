@@ -8,7 +8,10 @@
       <div class="row">
         <div v-if="!shop_right_side && !shop_no_side" class="col-xl-3 col-lg-4">
           <!-- shop sidebar start -->
-          <shop-sidebar :hide-categories="hideCategories" />
+          <shop-sidebar
+            :hide-categories="hideCategories"
+            :hide-status="hideStatus"
+          />
           <!-- shop sidebar end -->
         </div>
         <div :class="`${shop_no_side?'col-xl-12':'col-xl-9 col-lg-8'}`">
@@ -47,6 +50,7 @@
                 </div>
                 <div class="col-xl-6">
                   <shop-sidebar-filter-select
+                    :hide-offer="hideOfferFilter"
                     @handle-select-filter="store.handleSelectFilter"
                   />
                 </div>
@@ -103,7 +107,10 @@
 
         <div v-if="shop_right_side && !shop_no_side" class="col-xl-3 col-lg-4">
           <!-- shop sidebar start -->
-          <shop-sidebar :hide-categories="hideCategories" />
+          <shop-sidebar
+            :hide-categories="hideCategories"
+            :hide-status="hideStatus"
+          />
           <!-- shop sidebar end -->
         </div>
 
@@ -124,6 +131,8 @@ const props = defineProps<{
   shop_right_side?: boolean;
   shop_no_side?: boolean;
   hideCategories?: boolean;
+  hideStatus?: boolean;
+  hideOfferFilter?: boolean;
 }>();
 
 const active_tab = ref<string>(props.list_style ? "list" : "grid");
