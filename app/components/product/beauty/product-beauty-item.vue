@@ -9,7 +9,7 @@
       </nuxt-link>
 
       <!-- product action -->
-      <div class="tp-product-action-3 tp-product-action-blackStyle">
+      <div v-if="!hideActions" class="tp-product-action-3 tp-product-action-blackStyle">
         <div class="tp-product-action-item-3 d-flex flex-column">
 
           <button
@@ -53,7 +53,7 @@
         </div>
       </div>
 
-      <div class="tp-product-add-cart-btn-large-wrapper">
+      <div v-if="!hideActions" class="tp-product-add-cart-btn-large-wrapper">
         <button v-if="!isItemInCart(item)" @click="cartStore.addCartProduct(item)" type="button" class="tp-product-add-cart-btn-large">
           Add To Cart
         </button>
@@ -85,7 +85,18 @@ import { useWishlistStore } from "@/pinia/useWishlistStore";
 import { useUtilityStore } from "@/pinia/useUtilityStore";
 import { type IProduct } from "@/types/product-type";
 // props
-defineProps<{ item: IProduct; style_2?: boolean;isCenter?: boolean;primary_style?:boolean }>();
+withDefaults(
+  defineProps<{
+    item: IProduct;
+    style_2?: boolean;
+    isCenter?: boolean;
+    primary_style?: boolean;
+    hideActions?: boolean;
+  }>(),
+  {
+    hideActions: false,
+  }
+);
 
 
 const cartStore = useCartStore();
