@@ -38,7 +38,7 @@
               </div>
               <div class="tp-feature-content-2">
                 <h3 class="tp-feature-title-2">Promociones especiales</h3>
-                <p>Promociones especiales para nuestros clientes</p>
+                <p>Ofertas exclusivas</p>
               </div>
             </div>
           </div>

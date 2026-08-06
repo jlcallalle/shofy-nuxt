@@ -43,7 +43,7 @@
                           </span>
                       </div>
                       <div class="tp-contact-info-content">
-                          <p data-info="mail"><a href="mailto:contacto@boottrainingperu.com">contacto@boottrainingperu.com</a></p>
+                          <p data-info="mail"><a href="mailto:ventas@boottrainingperu.com">ventas@boottrainingperu.com</a></p>
                           <p data-info="phone"><a href="tel:947724459">+51 947724459</a></p>
                       </div>
                     </div>

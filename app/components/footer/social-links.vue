@@ -1,5 +1,5 @@
 <template>
-  <a v-for="item in social_data" :key="item.id" :href="item.link">
+  <a v-for="item in social_data" :key="item.id" :href="item.link"  target="_blank">
     <i :class="item.icon"></i>
   </a>
 </template>

@@ -19,7 +19,7 @@
       <div class="tp-footer-contact-content">
         <p>
           <a href="https://www.google.com/maps/search/Lima,+Peru" target="_blank">
-            Lima, Peru <br />
+            Lima, Perú <br />
             Atencion online a nivel nacional
           </a>
         </p>

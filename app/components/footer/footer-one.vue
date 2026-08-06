@@ -12,7 +12,7 @@
                       <img src="/img/logo/logo_peru.jpeg" alt="Boot Training Peru" style="max-width: 170px;">
                     </nuxt-link>
                   </div>
-                  <p class="tp-footer-desc">Boot Training Peru es una tienda especializada en zapatillas para entrenamiento, running y uso casual.
+                  <p class="tp-footer-desc">Boot Training Peru es una tienda especializada en zapatillas para entrenamiento.
                   </p>
                   <div class="tp-footer-social">
                     <!-- social links -->
@@ -39,11 +39,9 @@
                 <h4 class="tp-footer-widget-title">Informacion</h4>
                 <div class="tp-footer-widget-content">
                   <ul>
-                    <li><a href="#">Envios a todo el Peru</a></li>
-                    <li><a href="#">Cambios y devoluciones</a></li>
-                    <li><a href="#">Guia de tallas</a></li>
-                    <li><a href="#">Politicas de compra</a></li>
-                    <li><nuxt-link href="/contacto">Atencion al cliente</nuxt-link></li>
+                    <li>Envios a todo el Peru</li>
+                    <li>Partner oficial</li>
+                    <li>Atencion al cliente</li>
                   </ul>
                 </div>
               </div>
@@ -53,8 +51,8 @@
                 <h4 class="tp-footer-widget-title">Contactanos</h4>
                 <div class="tp-footer-widget-content">
                   <div class="tp-footer-talk mb-20">
-                    <span>Atencion y consultas</span>
-                    <h4><nuxt-link href="/contacto">Escribenos</nuxt-link></h4>
+                    <span>Atencion y consultas al:</span>
+                    <h4><a href="tel:+51947724459">+51 947724459</a></h4>
                   </div>
                   <!-- footer contact start -->
                   <footer-contact/>
