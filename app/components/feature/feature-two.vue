@@ -38,7 +38,7 @@
               </div>
               <div class="tp-feature-content-2">
                 <h3 class="tp-feature-title-2">Promociones especiales</h3>
-                <p>En compras mayores a {{formatPrice(140)}}</p>
+                <p>Promociones especiales para nuestros clientes</p>
               </div>
             </div>
           </div>
