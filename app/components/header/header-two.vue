@@ -77,13 +77,7 @@
     </div>
   </header>
 
-   <!-- cart offcanvas start -->
-   <offcanvas-cart-sidebar/>
-   <!-- cart offcanvas end -->
-
-  <!-- cart offcanvas start -->
   <offcanvas-mobile-sidebar/>
-  <!-- cart offcanvas end -->
 </template>
 
 <script setup lang="ts">
