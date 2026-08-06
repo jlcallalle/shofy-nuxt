@@ -111,7 +111,7 @@ export const shoes_data: ShoeProduct[] = [
     brand: "Boot Training",
     category: "Training",
     gender: "Unisex",
-    price: 300,
+    price: 320,
     discount: 0,
     quantity: 40,
     colors: [

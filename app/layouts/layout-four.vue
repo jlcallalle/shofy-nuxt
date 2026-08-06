@@ -6,6 +6,7 @@
     </main>
     <footer-two />
     <back-to-top />
+    <whatsapp-float />
     <!-- <modal-product /> -->
   </div>
 </template>
