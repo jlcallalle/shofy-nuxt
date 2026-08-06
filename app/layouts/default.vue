@@ -1,5 +1,6 @@
 <template>
   <div>
+    <announcement-marquee />
     <header-two :style_2="true" />
     <main>
       <slot />

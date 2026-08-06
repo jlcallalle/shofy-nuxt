@@ -1,5 +1,6 @@
 <template>
   <div>
+    <announcement-marquee/>
     <header-three/>
     <main>
       <slot/>
