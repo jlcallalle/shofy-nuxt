@@ -78,6 +78,7 @@ interface IFormValues {
 }
 
 const contactEmail = "jlcallalle@gmail.com";
+const contactCopyEmail = "Boottrainingperu@gmail.com";
 const isSubmitting = ref(false);
 const submitStatus = ref<"success" | "error" | null>(null);
 const submitMessage = ref("");
@@ -109,6 +110,7 @@ const onSubmit = handleSubmit(async (values) => {
         subject: values.subject,
         message: values.message,
         _subject: `Nuevo mensaje de contacto: ${values.subject}`,
+        _cc: contactCopyEmail,
         _template: "table",
         _captcha: "false",
       }),
