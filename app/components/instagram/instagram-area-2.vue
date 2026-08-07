@@ -47,9 +47,9 @@ const instagram_data:IInstagram[] = [
 </script>
 
 <style scoped>
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
   .instagram-profile-link {
     font-size: 26px;
   }
-}
+} */
 </style>

@@ -161,8 +161,11 @@
             }
             & a{
                 font-weight: 700;
-                font-size: 36px;
+                font-size: 22px;
                 color: #021D35;
+                @media (min-width: 1550px) {
+                    font-size: 36px;
+                }
                 &:hover{
                     color: var(--tp-theme-secondary);
                 }
