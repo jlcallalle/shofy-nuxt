@@ -19,8 +19,7 @@
             </div>
             <div class="tp-instagram-banner-content">
               <span>Síguenos en Instagram</span>
-              <!-- <a href="#">Instagram </a> -->
-              <a target="_blank" href="https://www.instagram.com/boot_training_brazil.peru">boot_training_brazil.peru </a>
+              <a class="instagram-profile-link" target="_blank" href="https://www.instagram.com/boot_training_brazil.peru">boot_training_brazil.peru </a>
             </div>
           </div>
         </div>
@@ -46,3 +45,11 @@ const instagram_data:IInstagram[] = [
   { id: 5, link: "https://www.instagram.com/p/DYxzyZ7tI0n/", img: '/img/instagram/galeria/insta-galeria-4.png' },
 ]
 </script>
+
+<style scoped>
+@media (max-width: 575px) {
+  .instagram-profile-link {
+    font-size: 26px;
+  }
+}
+</style>

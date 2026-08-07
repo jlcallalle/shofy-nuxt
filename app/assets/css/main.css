@@ -11674,6 +11674,13 @@ div.tp-blog-thumb img {
   font-size: 36px;
   color: #021D35;
 }
+
+/* @media (max-width: 575px) {
+  .tp-instagram-banner-content a  {
+    font-size: 26px;
+  }
+}
+ */
 .tp-instagram-banner-content a:hover {
   color: var(--tp-theme-secondary);
 }
