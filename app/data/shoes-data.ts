@@ -139,7 +139,7 @@ export const shoes_data: ShoeProduct[] = [
     title: "TENNIS",
     slug: "tennis",
     brand: "Boot Training",
-    category: "Running",
+    category: "Casual",
     gender: "Unisex",
     price: 250,
     discount: 0,
@@ -159,7 +159,7 @@ export const shoes_data: ShoeProduct[] = [
     description:
       "Zapatilla ligera para trote, caminata activa y sesiones de cardio con comodidad durante todo el dia.",
     status: "in-stock",
-    tags: ["boot training", "running", "zapatillas", "tennis"],
+    tags: ["boot training", "Casual", "zapatillas", "tennis"],
   },
   {
     id: "skull",

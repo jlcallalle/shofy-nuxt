@@ -67,6 +67,7 @@
                     <product-fashion-product-item
                       :item="item"
                       :spacing="true"
+                      :hide-add-cart="true"
                     />
                   </div>
                 </div>
