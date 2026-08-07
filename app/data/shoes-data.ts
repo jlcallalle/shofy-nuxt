@@ -1,6 +1,6 @@
 import { type IProduct } from "@/types/product-type";
 
-export type ShoeCategory = "Training" | "Running" | "Casual";
+export type ShoeCategory = "Training" | "Running" | "Deportivo";
 export type ShoeGender = "Hombre" | "Mujer" | "Unisex";
 
 export interface ShoeColor {
@@ -139,7 +139,7 @@ export const shoes_data: ShoeProduct[] = [
     title: "TENNIS",
     slug: "tennis",
     brand: "Boot Training",
-    category: "Casual",
+    category: "Deportivo",
     gender: "Unisex",
     price: 250,
     discount: 0,
@@ -159,7 +159,7 @@ export const shoes_data: ShoeProduct[] = [
     description:
       "Zapatilla ligera para trote, caminata activa y sesiones de cardio con comodidad durante todo el dia.",
     status: "in-stock",
-    tags: ["boot training", "Casual", "zapatillas", "tennis"],
+    tags: ["boot training", "deportivo", "zapatillas", "tennis"],
   },
   {
     id: "skull",
@@ -167,7 +167,7 @@ export const shoes_data: ShoeProduct[] = [
     title: "SKULL",
     slug: "skull",
     brand: "Boot Training",
-    category: "Casual",
+    category: "Deportivo",
     gender: "Unisex",
     price: 300,
     discount: 0,
@@ -185,9 +185,9 @@ export const shoes_data: ShoeProduct[] = [
     ],
     featured: false,
     description:
-      "Modelo urbano con caracter deportivo, pensado para combinar estilo casual con comodidad de entrenamiento.",
+      "Modelo urbano con caracter deportivo, pensado para combinar estilo Deportivo con comodidad de entrenamiento.",
     status: "in-stock",
-    tags: ["boot training", "casual", "zapatillas", "skull"],
+    tags: ["boot training", "deportivo", "zapatillas", "skull"],
   },
   {
     id: "iron",
@@ -219,7 +219,7 @@ export const shoes_data: ShoeProduct[] = [
     title: "DIVAS",
     slug: "divas",
     brand: "Boot Training",
-    category: "Casual",
+    category: "Deportivo",
     gender: "Mujer",
     price: 300,
     discount: 0,
@@ -237,9 +237,9 @@ export const shoes_data: ShoeProduct[] = [
     ],
     featured: false,
     description:
-      "Zapatilla casual deportiva con look moderno, creada para acompanarte del entrenamiento al dia a dia.",
+      "Zapatilla Deportivo deportiva con look moderno, creada para acompanarte del entrenamiento al dia a dia.",
     status: "in-stock",
-    tags: ["boot training", "casual", "zapatillas", "divas"],
+    tags: ["boot training", "deportivo", "zapatillas", "divas"],
   },
 ];
 
