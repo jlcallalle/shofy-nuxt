@@ -10,7 +10,6 @@
               <div class="col-xl-2 col-lg-5 col-md-5 col-sm-4 col-6">
                 <div class="logo">
                   <nuxt-link href="/">
-                    <!-- <img src="/img/logo/logo.svg" alt="logo"> -->
                     <img src="/img/logo/logo_peru.jpeg" width="150" height="50" alt="logo">
                   </nuxt-link>
                 </div>
@@ -35,28 +34,6 @@
                     </form>
                   </div>
                   <div class="tp-header-action d-flex align-items-center ml-30">
-                    <!-- <div class="tp-header-action-item d-none d-lg-block">
-                      <nuxt-link href="/compare" class="tp-header-action-btn">
-                        <svg-compare />
-                      </nuxt-link>
-                    </div> -->
-                    <!-- <div class="tp-header-action-item d-none d-lg-block">
-                      <nuxt-link href="/wishlist" class="tp-header-action-btn">
-                        <svg-wishlist />
-                        <span class="tp-header-action-badge">{{wishlistStore.wishlists.length}}</span>
-                      </nuxt-link>
-                    </div>
-                    <div class="tp-header-action-item">
-                      <button @click="cartStore.handleCartOffcanvas" class="tp-header-action-btn cartmini-open-btn">
-                        <svg-cart-bag />
-                        <span class="tp-header-action-badge">{{ cartStore.totalPriceQuantity.quantity }}</span>
-                      </button>
-                    </div>
-                    <div class="tp-header-action-item tp-header-hamburger mr-20 d-xl-none">
-                      <button @click="utilsStore.handleOpenMobileMenu()" type="button" class="tp-offcanvas-open-btn">
-                        <svg-menu-icon />
-                      </button>
-                    </div> -->
                     <div class="tp-header-action-item tp-header-hamburger d-xl-none">
                       <button
                         @click="utilsStore.handleOpenMobileMenu()"

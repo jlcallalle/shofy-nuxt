@@ -42,55 +42,6 @@
           </div>
         </div>
       </div>
-      <div class="offcanvas__bottom">
-        <div
-          class="offcanvas__footer d-flex align-items-center justify-content-between"
-        >
-          <div class="offcanvas__currency-wrapper currency">
-            <span
-              @click="handleToggleActive('currency')"
-              class="offcanvas__currency-selected-currency tp-currency-toggle"
-              id="tp-offcanvas-currency-toggle"
-              >Moneda: PEN
-            </span>
-            <ul
-              :class="`offcanvas__currency-list tp-currency-list ${
-                isToggleActive === 'currency' ? 'tp-currency-list-open' : ''
-              }`"
-            >
-              <li>PEN</li>
-              <li>USD</li>
-              <li>EUR</li>
-            </ul>
-          </div>
-          <div class="offcanvas__select language">
-            <div
-              class="offcanvas__lang d-flex align-items-center justify-content-md-end"
-            >
-              <div class="offcanvas__lang-img mr-15">
-                <img src="/img/icon/language-flag.png" alt="language-flag" />
-              </div>
-              <div class="offcanvas__lang-wrapper">
-                <span
-                  @click="handleToggleActive('lang')"
-                  class="offcanvas__lang-selected-lang tp-lang-toggle"
-                  id="tp-offcanvas-lang-toggle"
-                  >Español
-                </span>
-                <ul
-                  :class="`offcanvas__lang-list tp-lang-list ${
-                    isToggleActive === 'lang' ? 'tp-lang-list-open' : ''
-                  }`"
-                >
-                  <li>Español</li>
-                  <li>Portugués</li>
-                  <li>Inglés</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 

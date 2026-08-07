@@ -300,6 +300,9 @@
                 right: 10%;
                 z-index: -1;
                 mix-blend-mode: luminosity;
+                @media #{$xs} {
+                    display: none;
+                }
             }
        }
     }
@@ -326,8 +329,12 @@
         }
     }
     &-content-2{
-        @media #{$sm, $xs}{
+        /* @media #{$sm, $xs}{
             padding-top: 100px;
+        } */
+        padding-top: 100px;
+        @media #{$xs} {
+            padding-top: 50px;
         }
         & span{
             font-size: 20px;
