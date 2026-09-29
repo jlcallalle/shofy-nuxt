@@ -28,8 +28,8 @@
     </div>
 
     <!-- variations -->
-    <div v-if="hasColorData" class="tp-product-details-variation">
-    <div class="tp-product-details-variation-item">
+    <div class="tp-product-details-variation">
+    <div v-if="hasColorData" class="tp-product-details-variation-item">
       <h4 class="tp-product-details-variation-title">Color:</h4>
       <div class="tp-product-details-variation-list">
         <button
@@ -48,18 +48,23 @@
       </div>
     </div>
     <div v-if="availableSizes.length" class="tp-product-details-variation-item">
-      <h4 class="tp-product-details-variation-title">Talla:</h4>
       <div class="tp-product-details-size-list">
         <button
           v-for="size in availableSizes"
           :key="size"
           @click="selectedSize = size"
           type="button"
+          :aria-pressed="selectedSize === size"
+          :aria-label="sizeDescription(size)"
           :class="['tp-product-details-size-btn', selectedSize === size ? 'active' : '']"
         >
           {{ size }}
+          <span class="tp-size-tooltip" aria-hidden="true">{{ sizeMeasurement(size) }}</span>
         </button>
       </div>
+      <p class="tp-size-selection" role="status" aria-live="polite">
+        {{ sizeDescription(selectedSize) }}
+      </p>
     </div>
   </div>
 
@@ -205,6 +210,16 @@ const props = withDefaults(defineProps<{product:IProduct;isShowBottom?:boolean}>
 let textMore = ref<boolean>(false)
 const isSizeGuideOpen = ref<boolean>(false);
 const defaultSizes = ["34", "35", "36", "37", "38", "39", "40"];
+// Medidas de la guía BR publicada en /img/producto/tallas.jpg.
+const sizeMeasurements: Record<string, string> = {
+  '34': '22,6', '35': '23,2', '36': '23,9', '37': '24,6',
+  '38': '25,2', '39': '25,9', '40': '26,6', '41': '27,2',
+  '42': '27,9', '43': '28,6', '44': '29,2', '45': '29,9',
+};
+const sizeMeasurement = (size: string) => sizeMeasurements[size]
+  ? `${sizeMeasurements[size]} cm`
+  : 'Consulta la guía de tallas';
+const sizeDescription = (size: string) => `Talla ${size} · ${sizeMeasurement(size)}`;
 const selectedSize = ref<string>(props.product.sizes?.[0] || defaultSizes[0]);
 
 const hasColorData = computed(() =>
@@ -381,8 +396,9 @@ const whatsappUrl = computed(() => {
 }
 
 .tp-product-details-size-btn {
+  position: relative;
   min-width: 44px;
-  height: 38px;
+  height: 44px;
   padding: 0 12px;
   border: 1px solid #d9d9d9;
   border-radius: 4px;
@@ -393,6 +409,44 @@ const whatsappUrl = computed(() => {
   line-height: 1;
   transition: all 0.2s ease;
 }
+
+.tp-size-tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  width: max-content;
+  max-width: 150px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  background: #010f1c;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.4;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .tp-product-details-size-btn:hover .tp-size-tooltip,
+  .tp-product-details-size-btn:focus-visible .tp-size-tooltip {
+    visibility: visible;
+  }
+}
+
+.tp-product-details-size-btn:focus-visible {
+  outline: 2px solid #118c4f;
+  outline-offset: 3px;
+}
+
+.tp-product-details-wrapper .tp-size-selection {
+  margin: 12px 0 4px;
+  color: #0d7a44;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 
 .tp-product-details-size-btn:hover,
 .tp-product-details-size-btn.active {
